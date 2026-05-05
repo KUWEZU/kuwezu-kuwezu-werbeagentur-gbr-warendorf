@@ -1,8 +1,39 @@
 {
-  "averageRating": null,
-  "totalCount": 0,
+  "averageRating": 5,
+  "totalCount": 34,
   "source": "Google",
-  "fetchedAt": "2026-05-05T06:40:02.443Z",
-  "reviews": [],
-  "_debug": "Keine Bewertungsdaten gefunden. Maps-HTML-Anfang: <!doctype html><html lang=\"de\" dir=\"ltr\"><head><base href=\"https://consent.google.com/\"><link rel=\"p"
+  "fetchedAt": "2026-05-05T07:06:25.505Z",
+  "reviews": [
+    {
+      "author": "Malte Ottmann",
+      "rating": 5,
+      "text": "Bin top zufrieden hab nur gute Erfahrung machen können. Kann ich nur weiterempfehlen! Schnell, seriös und dazu kompetente Arbeit. Immer wieder gern.",
+      "date": "vor einem Jahr"
+    },
+    {
+      "author": "Marc DoX",
+      "rating": 5,
+      "text": "Vielen Dank für den tollen Service. Wir sind sehr zufrieden und würden die Dienste jederzeit wieder in Anspruch nehmen!",
+      "date": "vor einem Jahr"
+    },
+    {
+      "author": "Simon",
+      "rating": 5,
+      "text": "Bin mit dem Service und mit der Leistung sehr zufrieden und kann das Unternehmen auf jeden Fall weiterempfehlen! Vielen Dank ans Team!",
+      "date": "vor einem Jahr"
+    },
+    {
+      "author": "Özgür Özer",
+      "rating": 5,
+      "text": "Sehr zufrieden sehr zu empfehlen weiter so 👍👍👍",
+      "date": "vor einem Jahr"
+    },
+    {
+      "author": "Tobias A.",
+      "rating": 5,
+      "text": "Besser kann es gar nicht laufen.\nSehr freundlich und familiär.\nWir werden uns auch in Zukunft immer an Sie wenden!",
+      "date": "vor 4 Jahren"
+    }
+  ],
+  "_debug": "gmb-import"
 }

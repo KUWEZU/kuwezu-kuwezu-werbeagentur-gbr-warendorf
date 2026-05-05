@@ -9,24 +9,24 @@
   --color-brand-text:          #1a1a1a;
   --color-brand-muted:         #555555;
   --color-brand-border:        rgba(0,0,0,0.10);
-  --color-brand-primary:       #95c11f;
-  --color-brand-primary-hover: #83aa1b;
-  --color-brand-secondary:     #f7a600;
-  --color-brand-accent:        #636363;
+  --color-brand-primary:       #024089;
+  --color-brand-primary-hover: #023879;
+  --color-brand-secondary:     #ffd100;
+  --color-brand-accent:        #ffd100;
 
   /* Text-on-X Tokens — nur #000000 oder #FFFFFF, via getBestTextColor() berechnet */
-  --color-on-primary:     #000000;
+  --color-on-primary:     #FFFFFF;
   --color-on-secondary:   #000000;
-  --color-on-accent:      #FFFFFF;
+  --color-on-accent:      #000000;
   --color-on-bg:          #000000;
   --color-on-section-alt: #000000;
   --color-on-card:        #000000;
   --color-on-footer:      #FFFFFF;
 
   /* Kontrast-sichere Vordergrundfarben — Tailwind-Utilities: text-safe-primary etc. */
-  --color-safe-primary:   #111111;
+  --color-safe-primary:   #024089;
   --color-safe-secondary: #111111;
-  --color-safe-icon:      #555555;
+  --color-safe-icon:      #024089;
 
   --font-sans: var(--font-geist-sans);
 }
@@ -45,14 +45,14 @@
   --color-text-muted:  #555555;
 
   /* Markenfarben */
-  --color-primary:     #95c11f;
-  --color-secondary:   #f7a600;
-  --color-accent:      #636363;
+  --color-primary:     #024089;
+  --color-secondary:   #ffd100;
+  --color-accent:      #ffd100;
 
   /* Text-on-X — Template-Komponenten verwenden NUR diese Variablen für Textfarben */
-  --text-on-primary:     #000000;
+  --text-on-primary:     #FFFFFF;
   --text-on-secondary:   #000000;
-  --text-on-accent:      #FFFFFF;
+  --text-on-accent:      #000000;
   --text-on-bg:          #000000;
   --text-on-section-alt: #000000;
   --text-on-card:        #000000;
@@ -63,9 +63,9 @@
   --hero-overlay:      rgba(0,0,0,0.55);
 
   /* Kontrast-sichere Vordergrundfarben (für inline-Style-Nutzung) */
-  --safe-primary-text:   #111111;
+  --safe-primary-text:   #024089;
   --safe-secondary-text: #111111;
-  --safe-icon:           #555555;
+  --safe-icon:           #024089;
 
   /* Rückwärts-Kompatibilität */
   --background:        #ffffff;
