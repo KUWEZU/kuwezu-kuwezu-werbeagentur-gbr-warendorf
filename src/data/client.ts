@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-05T15:13:28.812Z
+ * Erstellt: 2026-05-05T16:19:39.021Z
  * Kundennummer: 60
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -11,7 +11,7 @@ export const client = {
   name: "KUWEZU Werbeagentur GbR",
   branche: "",
   ort: "Warendorf",
-  slogan: "professionell & zuverlässig",
+  slogan: "starke Markenauftritte",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
   telefon: "0176 21575303",
   email: "",
@@ -29,9 +29,9 @@ export const client = {
   hero: {
     bild: "https://r2.kuwezu.de/kunden/60/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: " — professionell & zuverlässig",
-    ueberschriftHighlight: "professionell & zuverlässig",
-    untertext: "Ihr Partner für alle Belange rund um  in Warendorf und Umgebung.",
+    ueberschrift: "Ihre Werbeagentur für starke Markenauftritte",
+    ueberschriftHighlight: "starke Markenauftritte",
+    untertext: "Von der kreativen Idee bis zur professionellen Umsetzung – KUWEZU Werbeagentur macht Ihr Unternehmen in Warendorf und Umgebung sichtbar.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://r2.kuwezu.de/kunden/60/ueber-uns.webp",
-    ueberschrift: "KUWEZU Werbeagentur GbR — Ihr Partner in Warendorf",
-    text1: "Als erfahrener -Betrieb in Warendorf bieten wir unseren Kunden seit Jahren zuverlässigen Service und kompetente Beratung. Mit Fachkompetenz und modernen Methoden lösen wir Ihre Anliegen effizient und zuverlässig.",
-    text2: "Wir setzen auf höchste Qualität, transparente Preise und persönlichen Service — damit Sie rundum zufrieden sind.",
-    tags: ["Qualität", "Zuverlässigkeit", "Faire Preise", "Erfahrung"],
+    ueberschrift: "KUWEZU – Ihre Werbeagentur aus Warendorf",
+    text1: "Als inhabergeführte Werbeagentur in Warendorf entwickeln wir maßgeschneiderte Werbelösungen für Unternehmen jeder Größe. Von der Fahrzeugbeschriftung über Werbetechnik bis zur digitalen Kommunikation – wir setzen Ihre Marke wirkungsvoll in Szene. Unser erfahrenes Team verbindet kreatives Design mit handwerklicher Präzision.",
+    text2: "Wir arbeiten eng mit unseren Kunden zusammen und legen Wert auf persönliche Beratung. Qualität, Termintreue und faire Preise sind für uns selbstverständlich. Ihre Zufriedenheit ist unser Anspruch.",
+    tags: ["Inhabergeführt", "Kreative Konzepte", "Faire Preise", "Persönliche Beratung"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -57,29 +57,29 @@ export const client = {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Professionelle Autoglas — schnell, zuverlässig und zu fairen Preisen.",
-      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
+      description: "Professionelle Autoglasfolierung und Fahrzeugbeschriftung für Firmenfahrzeuge und Privatwagen. Wir gestalten und montieren individuelle Werbebotschaften, die Ihr Unternehmen mobil machen.",
+      highlights: ["Individuelle Fahrzeugbeschriftung", "Werbefolierung nach Maß", "Professionelle Montage"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Professionelle Bremsen — schnell, zuverlässig und zu fairen Preisen.",
-      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
+      description: "Durchschlagende Werbewirkung durch kreative Kampagnen und starke Kommunikation. Wir entwickeln Konzepte, die Ihre Zielgruppe erreichen und Ihre Marke nachhaltig stärken.",
+      highlights: ["Kreative Kampagnenentwicklung", "Markenentwicklung & Branding", "Print- und Digitalwerbung"],
     },
     {
       slug: "elektronik",
       title: "Elektronik",
       bild: "https://r2.kuwezu.de/bibliothek/Elektronik/1777878497653-leistung_multimeter.webp",
-      description: "Professionelle Elektronik — schnell, zuverlässig und zu fairen Preisen.",
-      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
+      description: "Moderne digitale Werbelösungen und elektronische Displays für Ihre Außenwerbung. Von LED-Displays bis zu interaktiven Präsentationssystemen – Technik, die begeistert.",
+      highlights: ["LED-Displays & Leuchtwerbung", "Digitale Werbesysteme", "Interaktive Präsentationen"],
     },
     {
       slug: "elektroautos",
       title: "Elektroautos",
       bild: "https://r2.kuwezu.de/bibliothek/Elektroautos/1777878408924-leistung_elektroautos.webp",
-      description: "Professionelle Elektroautos — schnell, zuverlässig und zu fairen Preisen.",
-      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
+      description: "Spezialisierte Fahrzeugbeschriftung für Elektrofahrzeuge und E-Mobilität-Branding. Setzen Sie ein Zeichen für Nachhaltigkeit mit umweltbewusster Werbung auf Ihren E-Autos.",
+      highlights: ["E-Mobility Branding", "Nachhaltige Werbelösungen", "Zukunftsorientierte Gestaltung"],
     }
   ],
 
@@ -94,14 +94,14 @@ export const client = {
   // ── Öffnungszeiten & Services ──────────────────────────────────────────────
   tuev_termine: false as boolean,
   oeffnungszeiten: {
-    mo_fr: "09:00 – 18:00" as string,
+    mo_fr: "" as string,
     sa:    "" as string,
     so:    "" as string,
   },
 
   // ── Kontakt ────────────────────────────────────────────────────────────────
   kontakt: {
-    oeffnungszeiten: ["Mo–Fr: 09:00 – 18:00"],
+    oeffnungszeiten: ["Nach Vereinbarung"],
   },
 } as const;
 
