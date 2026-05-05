@@ -1,7 +1,7 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-05T07:41:52.814Z
- * Kundennummer: 59
+ * Erstellt: 2026-05-05T15:13:28.812Z
+ * Kundennummer: 60
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
  */
@@ -16,18 +16,18 @@ export const client = {
   telefon: "0176 21575303",
   email: "",
   website: "",
-  logo: "https://r2.kuwezu.de/kunden/59/logo.png",
+  logo: null,
   standort_bild: null,
 
   // ── Branding ───────────────────────────────────────────────────────────────
   farben: {
-    primary: "#e30613",
-    secondary: "#000000",
-    accent: "#b1b2b3",
+    primary: "#FFCC00",
+    secondary: "#F8A600",
+    accent: "#394448",
   },
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
-    bild: "https://r2.kuwezu.de/kunden/59/hero.webp",
+    bild: "https://r2.kuwezu.de/kunden/60/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
     ueberschrift: " — professionell & zuverlässig",
     ueberschriftHighlight: "professionell & zuverlässig",
@@ -38,7 +38,7 @@ export const client = {
 
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
-    bild: "https://r2.kuwezu.de/kunden/59/ueber-uns.webp",
+    bild: "https://r2.kuwezu.de/kunden/60/ueber-uns.webp",
     ueberschrift: "KUWEZU Werbeagentur GbR — Ihr Partner in Warendorf",
     text1: "Als erfahrener -Betrieb in Warendorf bieten wir unseren Kunden seit Jahren zuverlässigen Service und kompetente Beratung. Mit Fachkompetenz und modernen Methoden lösen wir Ihre Anliegen effizient und zuverlässig.",
     text2: "Wir setzen auf höchste Qualität, transparente Preise und persönlichen Service — damit Sie rundum zufrieden sind.",
@@ -54,13 +54,6 @@ export const client = {
   // ── Leistungen ─────────────────────────────────────────────────────────────
   leistungen: [
     {
-      slug: "achsvermessung",
-      title: "Achsvermessung",
-      bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Professionelle Achsvermessung — schnell, zuverlässig und zu fairen Preisen.",
-      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
-    },
-    {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
@@ -72,6 +65,13 @@ export const client = {
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
       description: "Professionelle Bremsen — schnell, zuverlässig und zu fairen Preisen.",
+      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
+    },
+    {
+      slug: "elektronik",
+      title: "Elektronik",
+      bild: "https://r2.kuwezu.de/bibliothek/Elektronik/1777878497653-leistung_multimeter.webp",
+      description: "Professionelle Elektronik — schnell, zuverlässig und zu fairen Preisen.",
       highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
     },
     {
@@ -92,7 +92,7 @@ export const client = {
   },
 
   // ── Öffnungszeiten & Services ──────────────────────────────────────────────
-  tuev_termine: true as boolean,
+  tuev_termine: false as boolean,
   oeffnungszeiten: {
     mo_fr: "09:00 – 18:00" as string,
     sa:    "" as string,
