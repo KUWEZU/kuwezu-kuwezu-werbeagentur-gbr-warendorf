@@ -1,1 +1,8 @@
-{"averageRating":null,"totalCount":0,"source":"Google","fetchedAt":"","reviews":[]}
+{
+  "averageRating": null,
+  "totalCount": 0,
+  "source": "Google",
+  "fetchedAt": "2026-05-05T06:40:02.443Z",
+  "reviews": [],
+  "_debug": "Keine Bewertungsdaten gefunden. Maps-HTML-Anfang: <!doctype html><html lang=\"de\" dir=\"ltr\"><head><base href=\"https://consent.google.com/\"><link rel=\"p"
+}
