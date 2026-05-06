@@ -10,15 +10,21 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "KUWEZU Werbeagentur Warendorf | Werbung & Design",
-  description: "Professionelle Werbelösungen aus Warendorf: Fahrzeugbeschriftung, Design, Werbetechnik & mehr. Persönliche Beratung & faire Preise. Jetzt anfragen!",
+  title: "Autowerkstatt Warendorf | KUWEZU – Achsen, Bremsen, E-Autos",
+  description: "Ihre Autowerkstatt in Warendorf: Achsvermessung, Autoglas, Bremsen & E-Auto-Service. Faire Preise, kompetente Beratung. Jetzt Termin vereinbaren!",
   openGraph: {
-    title: "KUWEZU Werbeagentur Warendorf | Werbung & Design",
-    description: "Professionelle Werbelösungen aus Warendorf: Fahrzeugbeschriftung, Design, Werbetechnik & mehr. Persönliche Beratung & faire Preise. Jetzt anfragen!",
+    title: "Autowerkstatt Warendorf | KUWEZU – Achsen, Bremsen, E-Autos",
+    description: "Ihre Autowerkstatt in Warendorf: Achsvermessung, Autoglas, Bremsen & E-Auto-Service. Faire Preise, kompetente Beratung. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },
-
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/logo.png", type: "image/png" },
+    ],
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
