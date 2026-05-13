@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { AccessibilityWidget } from "@/components/AccessibilityWidget";
 import { CookieBanner } from "@/components/CookieBanner";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,15 +11,21 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "KUWEZU Werbeagentur Warendorf | Web & Marketing",
-  description: "Professionelle Webentwicklung und Marketing aus Warendorf. Ihre Agentur für digitale Lösungen mit persönlichem Service. Jetzt Projekt besprechen!",
+  title: "Autowerkstatt Warendorf – KUWEZU | Karosserie & Bremsen",
+  description: "Professionelle Autowerkstatt in Warendorf ✓ Karosserie ✓ Bremsenservice ✓ Ersatzwagen ✓ Faire Preise & ehrliche Beratung. Jetzt Termin vereinbaren!",
   openGraph: {
-    title: "KUWEZU Werbeagentur Warendorf | Web & Marketing",
-    description: "Professionelle Webentwicklung und Marketing aus Warendorf. Ihre Agentur für digitale Lösungen mit persönlichem Service. Jetzt Projekt besprechen!",
+    title: "Autowerkstatt Warendorf – KUWEZU | Karosserie & Bremsen",
+    description: "Professionelle Autowerkstatt in Warendorf ✓ Karosserie ✓ Bremsenservice ✓ Ersatzwagen ✓ Faire Preise & ehrliche Beratung. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },
-
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/logo.png", type: "image/png" },
+    ],
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -33,6 +40,7 @@ export default function RootLayout({
         {children}
         <AccessibilityWidget />
         <CookieBanner />
+        <WhatsAppButton />
       </body>
     </html>
   );
