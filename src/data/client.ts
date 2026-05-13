@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-13T12:00:48.547Z
+ * Erstellt: 2026-05-13T12:25:11.157Z
  * Kundennummer: 66
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -11,7 +11,7 @@ export const client = {
   name: "KUWEZU Werbeagentur GbR",
   branche: "Autowerkstatt",
   ort: "Warendorf",
-  slogan: "mit Herz",
+  slogan: "Autowerkstatt",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
   telefon: "0176 21575303",
   email: "info@kuwezu.de",
@@ -29,9 +29,9 @@ export const client = {
   hero: {
     bild: "https://r2.kuwezu.de/kunden/66/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihre Autowerkstatt in Warendorf mit Herz",
-    ueberschriftHighlight: "mit Herz",
-    untertext: "Professionelle Karosserie- und Bremsarbeiten, zuverlässiger Ersatzwagen-Service. Ihre Mobilität ist unsere Priorität.",
+    ueberschrift: "Ihre Autowerkstatt in Warendorf seit Jahren",
+    ueberschriftHighlight: "Autowerkstatt",
+    untertext: "Von Karosserie bis Bremsen – professionelle Reparaturen und zuverlässiger Service. Ihr Ersatzwagen steht bereit.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://r2.kuwezu.de/kunden/66/ueber-uns.webp",
-    ueberschrift: "KUWEZU – Ihre Werkstatt-Profis in Warendorf",
-    text1: "Als erfahrene Autowerkstatt in Warendorf sind wir Ihre Ansprechpartner für Karosseriearbeiten, Bremsenwartung und vieles mehr. Mit Fachwissen und modernem Equipment bringen wir Ihr Fahrzeug wieder in Top-Form. Damit Sie mobil bleiben, stellen wir Ihnen bei Bedarf einen Ersatzwagen zur Verfügung.",
-    text2: "Faire Preise, transparente Kommunikation und echte Handwerksqualität – darauf können Sie sich bei uns verlassen. Wir nehmen uns Zeit für Ihre Anliegen und finden gemeinsam die beste Lösung für Ihr Fahrzeug.",
-    tags: ["Meisterbetrieb", "Faire Preise", "Ersatzwagen", "Schnelle Termine"],
+    ueberschrift: "Ihre Werkstatt-Profis aus Warendorf",
+    text1: "Als etablierte Autowerkstatt in Warendorf kümmern wir uns um alle Belange rund um Ihr Fahrzeug. Unsere Kernkompetenzen liegen in der Karosseriereparatur, Bremsenservice und umfassenden Wartungsarbeiten. Mit modernster Technik und langjähriger Erfahrung bringen wir Ihr Auto wieder in Bestform.",
+    text2: "Ehrliche Beratung und faire Preise sind für uns selbstverständlich. Damit Sie mobil bleiben, stellen wir Ihnen während der Reparatur gerne einen Ersatzwagen zur Verfügung. Ihr Vertrauen ist uns wichtig.",
+    tags: ["Meisterbetrieb", "Ersatzwagen inklusive", "Moderne Werkstatt", "Faire Preise"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -57,22 +57,22 @@ export const client = {
       slug: "karosserie",
       title: "Karosserie",
       bild: "https://r2.kuwezu.de/bibliothek/Karosserie/1777878013146-leistung_karosserie.webp",
-      description: "Von Beulen und Kratzern bis zu kompletten Unfallreparaturen – unsere Karosseriearbeiten machen Ihr Fahrzeug wieder wie neu. Wir arbeiten präzise, sauber und verwenden ausschließlich hochwertige Materialien.",
-      highlights: ["Unfallreparaturen", "Delle & Kratzer beseitigen", "Lackarbeiten"],
+      description: "Von kleinen Dellen bis zu größeren Unfallschäden – wir reparieren Ihre Karosserie fachgerecht. Mit präziser Arbeit und hochwertigen Materialien stellen wir den Originalzustand wieder her.",
+      highlights: ["Unfallreparaturen", "Dellenbeseitigung", "Lackierarbeiten"],
     },
     {
       slug: "ersatzwagen",
       title: "Ersatzwagen",
       bild: "https://r2.kuwezu.de/bibliothek/Ersatzwagen/1777882571137-ersatzwagen_auto.webp",
-      description: "Damit Sie während der Reparatur mobil bleiben, stellen wir Ihnen einen zuverlässigen Ersatzwagen zur Verfügung. Unkompliziert organisiert, damit Ihr Alltag weiterlaufen kann.",
-      highlights: ["Sofort verfügbar", "Unkomplizierte Abwicklung", "Versicherungsabrechnung möglich"],
+      description: "Während Ihr Fahrzeug bei uns in der Werkstatt ist, bleiben Sie mobil. Wir stellen Ihnen einen zuverlässigen Ersatzwagen zur Verfügung – unkompliziert und zu fairen Konditionen.",
+      highlights: ["Verschiedene Fahrzeugklassen", "Schnelle Verfügbarkeit", "Faire Mietpreise"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Ihre Sicherheit liegt uns am Herzen. Wir prüfen, warten und reparieren Ihre Bremsanlage fachgerecht und gründlich. Von Bremsbelägen bis zur kompletten Bremsanlage – alles aus einer Hand.",
-      highlights: ["Bremsen-Check", "Bremsbeläge wechseln", "Bremsflüssigkeit prüfen"],
+      description: "Ihre Sicherheit hat Priorität. Wir prüfen, warten und reparieren Ihre Bremsanlage mit größter Sorgfalt. Von Bremsbelägen über Bremsscheiben bis zur kompletten Bremsanlage – alles aus einer Hand.",
+      highlights: ["Bremsbeläge & Bremsscheiben", "Bremsleitungen", "Bremsflüssigkeitswechsel"],
     }
   ],
 
