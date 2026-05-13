@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-13T15:00:01.214Z
+ * Erstellt: 2026-05-13T15:18:39.001Z
  * Kundennummer: 67
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -11,7 +11,7 @@ export const client = {
   name: "KUWEZU Werbeagentur GbR",
   branche: "",
   ort: "Warendorf",
-  slogan: "Sicherheit",
+  slogan: "Kfz-Profi",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
   telefon: "0176 21575303",
   email: "info@kuwezu.de",
@@ -29,9 +29,9 @@ export const client = {
   hero: {
     bild: "https://r2.kuwezu.de/kunden/67/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihr Kfz-Spezialist in Warendorf für Sicherheit",
-    ueberschriftHighlight: "Sicherheit",
-    untertext: "Professionelle Autoglas-Reparatur, Bremsenservice und präzise Achsvermessung. Damit Sie sicher unterwegs sind.",
+    ueberschrift: "Ihr Kfz-Profi in Warendorf für Service",
+    ueberschriftHighlight: "Kfz-Profi",
+    untertext: "Von Autoglasreparatur über Bremsenwartung bis zur präzisen Achsvermessung – bei uns ist Ihr Fahrzeug in besten Händen.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://r2.kuwezu.de/kunden/67/ueber-uns.webp",
-    ueberschrift: "Ihre Kfz-Experten mitten in Warendorf",
-    text1: "Als KUWEZU Werbeagentur GbR in Warendorf haben wir uns auf sicherheitsrelevante Kfz-Services spezialisiert. Von der Autoglasreparatur über Bremsenwartung bis zur computergestützten Achsvermessung – wir sorgen dafür, dass Ihr Fahrzeug verkehrssicher bleibt. Mit moderner Technik und fundiertem Fachwissen betreuen wir Privat- und Firmenkunden aus der Region.",
-    text2: "Transparente Beratung und faire Preise sind für uns selbstverständlich. Wir nehmen uns Zeit für Ihre Anliegen und arbeiten sorgfältig – denn Ihre Sicherheit steht bei uns an erster Stelle.",
-    tags: ["Fachwerkstatt", "Moderne Technik", "Faire Preise", "Schneller Service"],
+    ueberschrift: "KUWEZU – Ihr Partner für Fahrzeugsicherheit in Warendorf",
+    text1: "Die KUWEZU Werbeagentur GbR steht in Warendorf für kompetenten Kfz-Service auf höchstem Niveau. Wir kümmern uns um die sicherheitsrelevanten Komponenten Ihres Fahrzeugs: von Autoglas über Bremsen bis zur exakten Achsvermessung. Mit moderner Technik und fundiertem Fachwissen sorgen wir dafür, dass Sie sicher unterwegs sind.",
+    text2: "Unser Team arbeitet präzise, zuverlässig und transparent. Wir nehmen uns Zeit für eine gründliche Analyse und beraten Sie ehrlich – ohne unnötige Reparaturen. Ihr Vertrauen und Ihre Sicherheit stehen bei uns an erster Stelle.",
+    tags: ["Modernste Messtechnik", "Erfahrene Profis", "Faire Preise", "Schneller Service"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -57,22 +57,22 @@ export const client = {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Steinschlag oder Riss? Wir reparieren oder tauschen Ihre Autoscheiben fachgerecht aus. Schnell, sauber und mit Direktabrechnung mit Ihrer Versicherung.",
-      highlights: ["Steinschlag-Reparatur", "Scheibentausch", "Versicherungsabwicklung"],
+      description: "Steinschlag oder Riss? Wir reparieren oder tauschen Ihr Autoglas professionell aus. Schnell, sauber und direkt mit Ihrer Versicherung abgerechnet.",
+      highlights: ["Steinschlagreparatur", "Scheibenaustausch", "Versicherungsabwicklung"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Funktionierende Bremsen sind lebenswichtig. Wir prüfen, warten und erneuern Bremsbeläge, Bremsscheiben und die gesamte Bremsanlage nach Herstellervorgaben.",
-      highlights: ["Bremsbeläge wechseln", "Bremsscheiben erneuern", "Bremsencheck"],
+      description: "Ihre Sicherheit hängt von funktionierenden Bremsen ab. Wir prüfen, warten und reparieren alle Bremskomponenten fachgerecht und zuverlässig.",
+      highlights: ["Bremsbeläge & Scheiben", "Bremsflüssigkeitswechsel", "Komplette Bremswartung"],
     },
     {
       slug: "achsvermessung",
       title: "Achsvermessung",
       bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Ungleicher Reifenverschleiß oder Spurprobleme? Mit modernster Messtechnik vermessen wir Ihre Achsen präzise und stellen sie optimal ein.",
-      highlights: ["Computergestützte Vermessung", "Spureinstellung", "Fahrwerks-Check"],
+      description: "Präzise Achsvermessung für optimale Fahrstabilität und gleichmäßigen Reifenverschleiß. Mit modernster 3D-Messtechnik für exakte Ergebnisse.",
+      highlights: ["3D-Achsvermessung", "Fahrwerkseinstellung", "Optimaler Reifenschutz"],
     }
   ],
 
@@ -85,16 +85,16 @@ export const client = {
   },
 
   // ── Öffnungszeiten & Services ──────────────────────────────────────────────
-  tuev_termine: true as boolean,
+  tuev_termine: false as boolean,
   oeffnungszeiten: {
-    mo_fr: "09:00 – 18:00" as string,
+    mo_fr: "" as string,
     sa:    "" as string,
     so:    "" as string,
   },
 
   // ── Kontakt ────────────────────────────────────────────────────────────────
   kontakt: {
-    oeffnungszeiten: ["Mo–Fr: 09:00 – 18:00"],
+    oeffnungszeiten: ["Nach Vereinbarung"],
   },
 
   // ── Social Media ───────────────────────────────────────────────────────────
@@ -104,7 +104,7 @@ export const client = {
   },
 
   // ── WhatsApp ───────────────────────────────────────────────────────────────
-  whatsapp: "+4917621575303" as string,
+  whatsapp: "" as string,
 
   // ── Features ───────────────────────────────────────────────────────────────
   newsEnabled: true as boolean,
