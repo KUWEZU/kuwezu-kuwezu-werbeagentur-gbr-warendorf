@@ -1,7 +1,7 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-13T14:54:21.394Z
- * Kundennummer: 66
+ * Erstellt: 2026-05-13T15:00:01.214Z
+ * Kundennummer: 67
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
  */
@@ -9,40 +9,40 @@
 export const client = {
   // ── Allgemein ──────────────────────────────────────────────────────────────
   name: "KUWEZU Werbeagentur GbR",
-  branche: "Autowerkstatt",
+  branche: "",
   ort: "Warendorf",
-  slogan: "mit Herz",
+  slogan: "Sicherheit",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
   telefon: "0176 21575303",
   email: "info@kuwezu.de",
   website: "",
-  logo: "https://r2.kuwezu.de/kunden/66/logo.png",
-  standort_bild: "https://r2.kuwezu.de/kunden/66/standort.webp",
+  logo: "https://r2.kuwezu.de/kunden/67/logo.png",
+  standort_bild: null,
 
   // ── Branding ───────────────────────────────────────────────────────────────
   farben: {
-    primary: "#024089",
-    secondary: "#ffd100",
-    accent: "#ffd100",
+    primary: "#e30613",
+    secondary: "#000000",
+    accent: "#b1b2b3",
   },
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
-    bild: "https://r2.kuwezu.de/kunden/66/hero.webp",
+    bild: "https://r2.kuwezu.de/kunden/67/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihre Autowerkstatt in Warendorf mit Herz",
-    ueberschriftHighlight: "mit Herz",
-    untertext: "Professionelle Reparaturen, zuverlässiger Service und faire Preise – Ihr Auto ist bei uns in besten Händen.",
+    ueberschrift: "Ihr Kfz-Spezialist in Warendorf für Sicherheit",
+    ueberschriftHighlight: "Sicherheit",
+    untertext: "Professionelle Autoglas-Reparatur, Bremsenservice und präzise Achsvermessung. Damit Sie sicher unterwegs sind.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
 
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
-    bild: "https://r2.kuwezu.de/kunden/66/ueber-uns.webp",
-    ueberschrift: "KUWEZU – Ihre Werkstatt-Partner in Warendorf",
-    text1: "Als etablierte Autowerkstatt in Warendorf kümmern wir uns um alle Belange rund um Ihr Fahrzeug. Von Karosseriearbeiten über Bremsenwartung bis hin zur kompletten Fahrzeuginstandsetzung – unser erfahrenes Team arbeitet präzise, schnell und zu fairen Konditionen. Damit Sie mobil bleiben, stellen wir Ihnen bei Bedarf einen Ersatzwagen zur Verfügung.",
-    text2: "Ehrliche Beratung und transparente Arbeitsweise sind für uns selbstverständlich. Wir nehmen uns Zeit für Ihre Anliegen und finden gemeinsam die beste Lösung für Ihr Fahrzeug. Vertrauen Sie auf unsere Kompetenz und Erfahrung.",
-    tags: ["Meisterbetrieb", "Moderne Werkstatt", "Persönliche Beratung", "Familiengeführt"],
+    bild: "https://r2.kuwezu.de/kunden/67/ueber-uns.webp",
+    ueberschrift: "Ihre Kfz-Experten mitten in Warendorf",
+    text1: "Als KUWEZU Werbeagentur GbR in Warendorf haben wir uns auf sicherheitsrelevante Kfz-Services spezialisiert. Von der Autoglasreparatur über Bremsenwartung bis zur computergestützten Achsvermessung – wir sorgen dafür, dass Ihr Fahrzeug verkehrssicher bleibt. Mit moderner Technik und fundiertem Fachwissen betreuen wir Privat- und Firmenkunden aus der Region.",
+    text2: "Transparente Beratung und faire Preise sind für uns selbstverständlich. Wir nehmen uns Zeit für Ihre Anliegen und arbeiten sorgfältig – denn Ihre Sicherheit steht bei uns an erster Stelle.",
+    tags: ["Fachwerkstatt", "Moderne Technik", "Faire Preise", "Schneller Service"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -54,25 +54,25 @@ export const client = {
   // ── Leistungen ─────────────────────────────────────────────────────────────
   leistungen: [
     {
-      slug: "karosserie",
-      title: "Karosserie",
-      bild: "https://r2.kuwezu.de/bibliothek/Karosserie/1777878013146-leistung_karosserie.webp",
-      description: "Von kleinen Dellen bis zu Unfallschäden – wir bringen Ihre Karosserie wieder in Form. Mit modernster Technik und fachgerechter Ausführung sorgen wir für erstklassige Ergebnisse.",
-      highlights: ["Unfallreparaturen", "Delle & Kratzer", "Lackierarbeiten"],
-    },
-    {
-      slug: "ersatzwagen",
-      title: "Ersatzwagen",
-      bild: "https://r2.kuwezu.de/bibliothek/Ersatzwagen/1777882571137-ersatzwagen_auto.webp",
-      description: "Während Ihr Fahrzeug bei uns in der Werkstatt ist, bleiben Sie mobil. Wir stellen Ihnen unkompliziert einen Ersatzwagen zur Verfügung – damit Ihr Alltag nicht ins Stocken gerät.",
-      highlights: ["Sofort verfügbar", "Unkomplizierte Abwicklung", "Faire Konditionen"],
+      slug: "autoglas",
+      title: "Autoglas",
+      bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
+      description: "Steinschlag oder Riss? Wir reparieren oder tauschen Ihre Autoscheiben fachgerecht aus. Schnell, sauber und mit Direktabrechnung mit Ihrer Versicherung.",
+      highlights: ["Steinschlag-Reparatur", "Scheibentausch", "Versicherungsabwicklung"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Ihre Sicherheit hat oberste Priorität. Wir prüfen, warten und reparieren Ihre Bremsanlage fachgerecht mit Originalteilen und dokumentieren alle Arbeiten lückenlos.",
-      highlights: ["Bremsscheiben & Beläge", "Bremsflüssigkeitswechsel", "Vollständige Inspektion"],
+      description: "Funktionierende Bremsen sind lebenswichtig. Wir prüfen, warten und erneuern Bremsbeläge, Bremsscheiben und die gesamte Bremsanlage nach Herstellervorgaben.",
+      highlights: ["Bremsbeläge wechseln", "Bremsscheiben erneuern", "Bremsencheck"],
+    },
+    {
+      slug: "achsvermessung",
+      title: "Achsvermessung",
+      bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
+      description: "Ungleicher Reifenverschleiß oder Spurprobleme? Mit modernster Messtechnik vermessen wir Ihre Achsen präzise und stellen sie optimal ein.",
+      highlights: ["Computergestützte Vermessung", "Spureinstellung", "Fahrwerks-Check"],
     }
   ],
 
@@ -85,22 +85,22 @@ export const client = {
   },
 
   // ── Öffnungszeiten & Services ──────────────────────────────────────────────
-  tuev_termine: false as boolean,
+  tuev_termine: true as boolean,
   oeffnungszeiten: {
-    mo_fr: "" as string,
+    mo_fr: "09:00 – 18:00" as string,
     sa:    "" as string,
     so:    "" as string,
   },
 
   // ── Kontakt ────────────────────────────────────────────────────────────────
   kontakt: {
-    oeffnungszeiten: ["Nach Vereinbarung"],
+    oeffnungszeiten: ["Mo–Fr: 09:00 – 18:00"],
   },
 
   // ── Social Media ───────────────────────────────────────────────────────────
   social: {
-    facebook:  "https://www.facebook.com/KUWEZU/" as string | null,
-    instagram: "https://www.instagram.com/kuwezu_werbeagentur/" as string | null,
+    facebook:  null as string | null,
+    instagram: null as string | null,
   },
 
   // ── WhatsApp ───────────────────────────────────────────────────────────────
