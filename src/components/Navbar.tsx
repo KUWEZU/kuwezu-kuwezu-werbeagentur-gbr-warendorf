@@ -1,20 +1,28 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X, Phone } from "lucide-react";
 import { client } from "@/data/client";
 
-const NAV_LINKS = [
-  { label: "Über uns",   href: "#ueber-uns"  },
-  { label: "Leistungen", href: "#leistungen" },
-  { label: "Karriere",   href: "#karriere"   },
-  { label: "Kontakt",    href: "#kontakt"    },
+const NAV_ANCHORS = [
+  { label: "Über uns",   anchor: "ueber-uns"  },
+  { label: "Leistungen", anchor: "leistungen" },
+  { label: "Karriere",   anchor: "karriere"   },
+  { label: "Kontakt",    anchor: "kontakt"    },
 ];
+
+// Scrolled-nav surface variables — resolved per Farbmodus via CSS custom properties.
+// Set by the dashboard's buildGlobalsCss(); defaults in globals.css match dark mode.
+const NAV_SCROLLED_HOVER_BG     = "var(--nav-scrolled-hover-bg)";
+const NAV_SCROLLED_BORDER_COLOR = "var(--nav-scrolled-border)";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     function onScroll() { setScrolled(window.scrollY > 30); }
@@ -22,9 +30,16 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  function handleNavClick(href: string) {
+  // On the home page smooth-scroll; on any other page navigate to /#anchor.
+  function navHref(anchor: string) {
+    return pathname === "/" ? `#${anchor}` : `/#${anchor}`;
+  }
+
+  function handleNavClick(e: React.MouseEvent, anchor: string) {
+    if (pathname !== "/") return; // let normal link navigation handle it
+    e.preventDefault();
     setOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(anchor)?.scrollIntoView({ behavior: "smooth" });
   }
 
   const initials = client.name.slice(0, 2).toUpperCase();
@@ -33,10 +48,11 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300${scrolled ? " border-b" : ""}`}
       style={scrolled ? {
-        backgroundColor: "var(--color-brand-bg)",
+        // Same surface as footer — light in Light Mode, dark in Dark Mode.
+        backgroundColor: "var(--color-footer-bg)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
-        borderBottomColor: "var(--color-brand-border)",
+        borderBottomColor: NAV_SCROLLED_BORDER_COLOR,
         boxShadow: "var(--nav-shadow)",
       } : {
         background: "var(--nav-hero-bg)",
@@ -47,8 +63,8 @@ export function Navbar() {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between" aria-label="Hauptnavigation">
 
         {/* Logo / Wordmark */}
-        <a href="#hero" className="flex items-center gap-3 group" aria-label="Zur Startseite"
-          onClick={(e) => { e.preventDefault(); handleNavClick("#hero"); }}>
+        <a href={navHref("hero")} className="flex items-center gap-3 group" aria-label="Zur Startseite"
+          onClick={(e) => handleNavClick(e, "hero")}>
           {client.logo ? (
             <Image src={client.logo} alt={client.name} width={180} height={64} className="h-12 sm:h-16 w-auto object-contain" unoptimized />
           ) : (
@@ -58,7 +74,7 @@ export function Navbar() {
               </div>
               <span
                 className="font-bold text-lg tracking-tight transition-colors group-hover:opacity-80"
-                style={{ color: scrolled ? "var(--color-brand-text)" : "var(--nav-hero-text)" }}>
+                style={{ color: scrolled ? "var(--text-on-footer)" : "var(--nav-hero-text)" }}>
                 {client.name}
               </span>
             </>
@@ -67,29 +83,30 @@ export function Navbar() {
 
         {/* Desktop nav links */}
         <ul className="hidden md:flex items-center gap-1" role="list">
-          {NAV_LINKS.map(({ label, href }) => (
-            <li key={href}>
-              <a href={href} onClick={(e) => { e.preventDefault(); handleNavClick(href); }}
+          {NAV_ANCHORS.map(({ label, anchor }) => (
+            <li key={anchor}>
+              <a href={navHref(anchor)} onClick={(e) => handleNavClick(e, anchor)}
                 className="px-4 py-2.5 text-base font-medium rounded-lg transition-all min-h-[44px] inline-flex items-center"
                 style={scrolled ? {
-                  color: "var(--color-brand-text)",
+                  // Scrolled: text-on-footer switches per mode (white/dark)
+                  color: "var(--text-on-footer)",
                   opacity: 0.7,
                 } : {
                   color: "var(--nav-hero-text-muted)",
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = scrolled
-                    ? "rgba(0,0,0,0.06)"
+                    ? NAV_SCROLLED_HOVER_BG
                     : "var(--nav-hero-hover-bg)";
                   (e.currentTarget as HTMLElement).style.color = scrolled
-                    ? "var(--color-brand-text)"
+                    ? "var(--text-on-footer)"
                     : "var(--nav-hero-text)";
                   (e.currentTarget as HTMLElement).style.opacity = "1";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
                   (e.currentTarget as HTMLElement).style.color = scrolled
-                    ? "var(--color-brand-text)"
+                    ? "var(--text-on-footer)"
                     : "var(--nav-hero-text-muted)";
                   (e.currentTarget as HTMLElement).style.opacity = scrolled ? "0.7" : "1";
                 }}>
@@ -97,6 +114,27 @@ export function Navbar() {
               </a>
             </li>
           ))}
+          {client.newsEnabled && (
+            <li>
+              <Link href="/aktuelles"
+                className="px-4 py-2.5 text-base font-medium rounded-lg transition-all min-h-[44px] inline-flex items-center"
+                style={scrolled ? { color: "var(--text-on-footer)", opacity: 0.7 } : { color: "var(--nav-hero-text-muted)" }}
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.backgroundColor = scrolled ? NAV_SCROLLED_HOVER_BG : "var(--nav-hero-hover-bg)";
+                  el.style.color = scrolled ? "var(--text-on-footer)" : "var(--nav-hero-text)";
+                  el.style.opacity = "1";
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.backgroundColor = "transparent";
+                  el.style.color = scrolled ? "var(--text-on-footer)" : "var(--nav-hero-text-muted)";
+                  el.style.opacity = scrolled ? "0.7" : "1";
+                }}>
+                Aktuelles
+              </Link>
+            </li>
+          )}
         </ul>
 
         {/* Desktop CTA */}
@@ -104,13 +142,14 @@ export function Navbar() {
           {client.telefon && (
             <a href={`tel:${client.telefon}`}
               className="flex items-center gap-2 text-base font-medium transition-colors min-h-[44px]"
-              style={{ color: scrolled ? "var(--safe-primary-text)" : "var(--nav-hero-text)" }}
+              // Scrolled: --color-safe-primary = primary if ≥4.5:1 on surface, else heading color
+              style={{ color: scrolled ? "var(--color-safe-primary)" : "var(--nav-hero-text)" }}
               aria-label="Jetzt anrufen">
               <Phone className="w-4 h-4" aria-hidden="true" />
               {client.telefon}
             </a>
           )}
-          <a href="#kontakt" onClick={(e) => { e.preventDefault(); handleNavClick("#kontakt"); }}
+          <a href={navHref("kontakt")} onClick={(e) => handleNavClick(e, "kontakt")}
             className="px-5 py-2.5 text-base font-semibold bg-brand-primary text-on-primary hover:bg-brand-primary-hover
                        rounded-xl transition-all min-h-[44px] inline-flex items-center shadow-lg shadow-brand-primary/20">
             Termin buchen
@@ -120,36 +159,49 @@ export function Navbar() {
         {/* Mobile burger */}
         <button type="button" onClick={() => setOpen(v => !v)}
           className="md:hidden p-3 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-          style={{ color: scrolled ? "var(--color-brand-text)" : "var(--nav-hero-text)" }}
+          style={{ color: scrolled ? "var(--text-on-footer)" : "var(--nav-hero-text)" }}
           aria-label={open ? "Menü schließen" : "Menü öffnen"} aria-expanded={open} aria-controls="mobile-menu">
           {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — same surface as scrolled header + footer (mode-aware) */}
       {open && (
         <div id="mobile-menu" role="navigation" aria-label="Mobilmenü"
           className="md:hidden border-t px-4 pb-5"
-          style={{ backgroundColor: "var(--color-brand-bg)", borderTopColor: "var(--color-brand-border)" }}>
+          style={{ backgroundColor: "var(--color-footer-bg)", borderTopColor: NAV_SCROLLED_BORDER_COLOR }}>
           <ul className="space-y-1 pt-3" role="list">
-            {NAV_LINKS.map(({ label, href }) => (
-              <li key={href}>
-                <a href={href} onClick={(e) => { e.preventDefault(); handleNavClick(href); }}
-                  className="flex items-center px-4 py-3 text-base font-medium text-brand-text/70 hover:text-brand-text
-                             hover:bg-brand-text/[0.06] rounded-lg transition-all min-h-[44px]">
+            {NAV_ANCHORS.map(({ label, anchor }) => (
+              <li key={anchor}>
+                <a href={navHref(anchor)} onClick={(e) => handleNavClick(e, anchor)}
+                  className="flex items-center px-4 py-3 text-base font-medium text-on-footer/70 hover:text-on-footer
+                             rounded-lg transition-all min-h-[44px]"
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "var(--nav-scrolled-hover-bg)"; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "transparent"; }}>
                   {label}
                 </a>
               </li>
             ))}
+            {client.newsEnabled && (
+              <li>
+                <Link href="/aktuelles" onClick={() => setOpen(false)}
+                  className="flex items-center px-4 py-3 text-base font-medium text-on-footer/70 hover:text-on-footer
+                             rounded-lg transition-all min-h-[44px]"
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "var(--nav-scrolled-hover-bg)"; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "transparent"; }}>
+                  Aktuelles
+                </Link>
+              </li>
+            )}
           </ul>
-          <div className="mt-4 pt-4 border-t flex flex-col gap-3" style={{ borderTopColor: "var(--color-brand-border)" }}>
+          <div className="mt-4 pt-4 border-t flex flex-col gap-3" style={{ borderTopColor: NAV_SCROLLED_BORDER_COLOR }}>
             {client.telefon && (
               <a href={`tel:${client.telefon}`}
                 className="flex items-center gap-2 px-4 py-3 text-base font-medium text-safe-primary min-h-[44px]">
                 <Phone className="w-4 h-4" aria-hidden="true" />{client.telefon}
               </a>
             )}
-            <a href="#kontakt" onClick={(e) => { e.preventDefault(); handleNavClick("#kontakt"); }}
+            <a href={navHref("kontakt")} onClick={(e) => handleNavClick(e, "kontakt")}
               className="w-full text-center px-4 py-3.5 text-base font-semibold bg-brand-primary text-on-primary rounded-xl min-h-[44px] flex items-center justify-center">
               Termin buchen
             </a>

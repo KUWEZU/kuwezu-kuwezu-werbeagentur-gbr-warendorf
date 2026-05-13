@@ -8,7 +8,7 @@ export function Footer() {
 
   return (
     <footer
-      className="border-t border-white/[0.06]"
+      className="border-t border-brand-border"
       style={{ backgroundColor: "var(--color-footer-bg)" }}
       aria-label="Seitenende"
     >
@@ -26,33 +26,50 @@ export function Footer() {
                   <div className="w-10 h-10 rounded-xl bg-brand-primary flex items-center justify-center shrink-0">
                     <span className="text-on-primary font-black text-sm">{initials}</span>
                   </div>
-                  <span className="text-on-footer font-bold text-lg">{client.name}</span>
+                  <span className="text-brand-text font-bold text-lg">{client.name}</span>
                 </>
               )}
             </div>
-            <p className="text-base text-on-footer/50 leading-relaxed mb-6">
+            <p className="text-base text-brand-muted leading-relaxed mb-6">
               Ihr {client.branche}-Betrieb in {client.ort}. Qualität, Transparenz
               und schneller Service.
             </p>
-            <div className="flex items-center gap-3">
-              {[{ label: "Facebook", href: "#" }, { label: "Instagram", href: "#" }].map(({ label, href }) => (
-                <a key={label} href={href} aria-label={`${label} öffnen`}
-                  className="w-10 h-10 rounded-lg bg-white/[0.06] border border-white/[0.08] flex items-center justify-center
-                             text-on-footer/40 hover:text-on-footer hover:border-white/[0.16] transition-all text-xs font-medium min-h-[44px]">
-                  {label.slice(0, 2)}
-                </a>
-              ))}
-            </div>
+            {(client.social.facebook || client.social.instagram) && (
+              <div className="flex items-center gap-3">
+                {client.social.facebook && (
+                  <a href={client.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen"
+                    className="w-10 h-10 rounded-lg bg-brand-surface2 border border-brand-border flex items-center justify-center
+                               text-brand-muted hover:text-brand-text hover:border-brand-border transition-all min-h-[44px]">
+                    {/* Facebook "f" — stroke style, same format as lucide-react */}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                  </a>
+                )}
+                {client.social.instagram && (
+                  <a href={client.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen"
+                    className="w-10 h-10 rounded-lg bg-brand-surface2 border border-brand-border flex items-center justify-center
+                               text-brand-muted hover:text-brand-text hover:border-brand-border transition-all min-h-[44px]">
+                    {/* Instagram camera — stroke style, same format as lucide-react */}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                  </a>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Leistungen */}
           <div>
-            <h3 className="text-base font-semibold text-on-footer mb-5 uppercase tracking-wide text-sm">Leistungen</h3>
+            <h3 className="text-base font-semibold text-brand-heading mb-5 uppercase tracking-wide text-sm">Leistungen</h3>
             <ul className="space-y-2.5" role="list">
               {client.leistungen.slice(0, 8).map((l) => (
                 <li key={l.slug}>
                   <a href="#leistungen"
-                    className="text-base text-on-footer/50 hover:text-on-footer transition-colors leading-relaxed">
+                    className="text-base text-brand-muted hover:text-brand-text transition-colors leading-relaxed">
                     {l.title}
                   </a>
                 </li>
@@ -62,10 +79,11 @@ export function Footer() {
 
           {/* Unternehmen */}
           <div>
-            <h3 className="text-base font-semibold text-on-footer mb-5 uppercase tracking-wide text-sm">Unternehmen</h3>
+            <h3 className="text-base font-semibold text-brand-heading mb-5 uppercase tracking-wide text-sm">Unternehmen</h3>
             <ul className="space-y-2.5" role="list">
               {[
                 { label: "Über uns",         href: "#ueber-uns"        },
+                ...(client.newsEnabled ? [{ label: "Aktuelles", href: "/aktuelles" }] : []),
                 { label: "Karriere",         href: "#karriere"         },
                 { label: "Kontakt",          href: "#kontakt"          },
                 { label: "Impressum",        href: "/impressum"        },
@@ -73,7 +91,7 @@ export function Footer() {
                 { label: "Barrierefreiheit", href: "/barrierefreiheit" },
               ].map(({ label, href }) => (
                 <li key={label}>
-                  <a href={href} className="text-base text-on-footer/50 hover:text-on-footer transition-colors">{label}</a>
+                  <a href={href} className="text-base text-brand-muted hover:text-brand-text transition-colors">{label}</a>
                 </li>
               ))}
             </ul>
@@ -81,12 +99,12 @@ export function Footer() {
 
           {/* Kontaktdaten */}
           <div>
-            <h3 className="text-base font-semibold text-on-footer mb-5 uppercase tracking-wide text-sm">Kontakt</h3>
+            <h3 className="text-base font-semibold text-brand-heading mb-5 uppercase tracking-wide text-sm">Kontakt</h3>
             <ul className="space-y-4" role="list">
               {client.telefon && (
                 <li>
                   <a href={`tel:${client.telefon}`}
-                    className="flex items-center gap-3 text-base text-on-footer/50 hover:text-on-footer transition-colors group min-h-[44px]">
+                    className="flex items-center gap-3 text-base text-brand-muted hover:text-brand-text transition-colors group min-h-[44px]">
                     <div className="w-8 h-8 rounded-lg bg-brand-primary/15 flex items-center justify-center shrink-0 group-hover:bg-brand-primary/25 transition-colors">
                       <Phone className="w-4 h-4 text-brand-primary" aria-hidden="true" />
                     </div>
@@ -97,7 +115,7 @@ export function Footer() {
               {client.email && (
                 <li>
                   <a href={`mailto:${client.email}`}
-                    className="flex items-center gap-3 text-base text-on-footer/50 hover:text-on-footer transition-colors group min-h-[44px]">
+                    className="flex items-center gap-3 text-base text-brand-muted hover:text-brand-text transition-colors group min-h-[44px]">
                     <div className="w-8 h-8 rounded-lg bg-brand-primary/15 flex items-center justify-center shrink-0 group-hover:bg-brand-primary/25 transition-colors">
                       <Mail className="w-4 h-4 text-brand-primary" aria-hidden="true" />
                     </div>
@@ -107,7 +125,7 @@ export function Footer() {
               )}
               {client.adresse && (
                 <li>
-                  <address className="not-italic flex items-start gap-3 text-base text-on-footer/50">
+                  <address className="not-italic flex items-start gap-3 text-base text-brand-muted">
                     <div className="w-8 h-8 rounded-lg bg-brand-primary/15 flex items-center justify-center shrink-0 mt-0.5">
                       <MapPin className="w-4 h-4 text-brand-primary" aria-hidden="true" />
                     </div>
@@ -122,13 +140,13 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/[0.05]">
+      <div className="border-t border-brand-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-on-footer/30">© {year} {client.name}. Alle Rechte vorbehalten.</p>
+          <p className="text-sm text-brand-muted">© {year} {client.name}. Alle Rechte vorbehalten.</p>
           <div className="flex items-center gap-5">
-            <a href="/impressum"        className="text-sm text-on-footer/30 hover:text-on-footer/70 transition-colors">Impressum</a>
-            <a href="/datenschutz"      className="text-sm text-on-footer/30 hover:text-on-footer/70 transition-colors">Datenschutz</a>
-            <a href="/barrierefreiheit" className="text-sm text-on-footer/30 hover:text-on-footer/70 transition-colors">Barrierefreiheit</a>
+            <a href="/impressum"        className="text-sm text-brand-muted hover:text-brand-text transition-colors">Impressum</a>
+            <a href="/datenschutz"      className="text-sm text-brand-muted hover:text-brand-text transition-colors">Datenschutz</a>
+            <a href="/barrierefreiheit" className="text-sm text-brand-muted hover:text-brand-text transition-colors">Barrierefreiheit</a>
           </div>
         </div>
       </div>
