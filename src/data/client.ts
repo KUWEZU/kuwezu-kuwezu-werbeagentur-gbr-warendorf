@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-13T12:37:32.790Z
+ * Erstellt: 2026-05-13T12:53:24.534Z
  * Kundennummer: 66
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -31,7 +31,7 @@ export const client = {
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
     ueberschrift: "Ihre Autowerkstatt in Warendorf mit Rundum-Service",
     ueberschriftHighlight: "Rundum-Service",
-    untertext: "Karosserie, Bremsen und Ersatzwagen – alles aus einer Hand. Professionell, zuverlässig und fair.",
+    untertext: "Von Karosseriearbeiten über Bremsenwartung bis zum Ersatzwagen – wir halten Ihr Fahrzeug zuverlässig in Schuss.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://r2.kuwezu.de/kunden/66/ueber-uns.webp",
-    ueberschrift: "Ihre Autowerkstatt-Experten aus Warendorf",
-    text1: "Bei KUWEZU in Warendorf bekommen Sie echte Handwerksarbeit für Ihr Fahrzeug. Von der Karosseriereparatur über Bremsenwartung bis zum kostenlosen Ersatzwagen – wir kümmern uns um Ihr Auto, während Sie mobil bleiben. Mit modernem Equipment und langjähriger Erfahrung sorgen wir dafür, dass Sie sicher unterwegs sind.",
-    text2: "Wir nehmen uns Zeit für eine ehrliche Beratung und arbeiten transparent. Keine versteckten Kosten, keine unnötigen Reparaturen – nur das, was Ihr Fahrzeug wirklich braucht. Ihr Auto ist bei uns in guten Händen.",
-    tags: ["Meisterbetrieb", "Ersatzwagen inklusive", "Faire Preise", "Schnelle Termine"],
+    ueberschrift: "Ihre Werkstatt-Partner in Warendorf",
+    text1: "Bei KUWEZU in Warendorf bekommen Sie kompetente Kfz-Reparaturen aus einer Hand. Wir kümmern uns um Karosserieschäden, Bremsenservice und sorgen mit Ersatzfahrzeugen dafür, dass Sie mobil bleiben. Unser Team arbeitet präzise, ehrlich und mit modernster Technik.",
+    text2: "Wir nehmen uns Zeit für Ihre Anliegen und erklären jeden Arbeitsschritt verständlich. Faire Preise und Termintreue sind für uns selbstverständlich – damit Sie sicher weiterfahren können.",
+    tags: ["Meisterbetrieb", "Ersatzwagen inklusive", "Schnelle Termine", "Faire Preise"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -57,22 +57,22 @@ export const client = {
       slug: "karosserie",
       title: "Karosserie",
       bild: "https://r2.kuwezu.de/bibliothek/Karosserie/1777878013146-leistung_karosserie.webp",
-      description: "Professionelle Karosseriereparatur und Unfallschadenbeseitigung in Warendorf. Von der Delle bis zum Totalschaden – wir bringen Ihr Fahrzeug wieder in Form.",
-      highlights: ["Unfall-Instandsetzung", "Dellenentfernung", "Lackierarbeiten"],
+      description: "Vom kleinen Kratzer bis zum Unfallschaden – wir reparieren Ihre Karosserie fachgerecht und bringen Ihr Fahrzeug wieder in Form. Lackierung, Dellen und Rostbeseitigung gehören zu unseren Stärken.",
+      highlights: ["Unfallreparaturen", "Lackierarbeiten", "Dellenentfernung"],
     },
     {
       slug: "ersatzwagen",
       title: "Ersatzwagen",
       bild: "https://r2.kuwezu.de/bibliothek/Ersatzwagen/1777882571137-ersatzwagen_auto.webp",
-      description: "Damit Sie während der Reparatur mobil bleiben, stellen wir Ihnen kostenlos einen Ersatzwagen zur Verfügung. Einfach, unkompliziert und zuverlässig.",
-      highlights: ["Kostenloser Service", "Sofort verfügbar", "Unkomplizierte Abwicklung"],
+      description: "Damit Sie während der Reparatur mobil bleiben, stellen wir Ihnen unkompliziert einen Ersatzwagen zur Verfügung. So müssen Sie auf nichts verzichten.",
+      highlights: ["Sofort verfügbar", "Faire Konditionen", "Verschiedene Fahrzeugklassen"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Sicherheit geht vor: Wir prüfen und reparieren Ihre Bremsanlage nach Herstellervorgaben. Von Bremsbelägen bis zur kompletten Überholung – für maximale Fahrsicherheit.",
-      highlights: ["Bremsbeläge wechseln", "Bremsflüssigkeit", "Komplette Bremsanlage"],
+      description: "Sicherheit geht vor – wir prüfen, warten und erneuern Ihre Bremsanlage nach Herstellervorgaben. Für zuverlässiges Bremsen in jeder Situation.",
+      highlights: ["Bremsscheiben & Beläge", "Bremsflüssigkeitswechsel", "Funktionsprüfung"],
     }
   ],
 

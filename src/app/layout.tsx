@@ -11,11 +11,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Autowerkstatt Warendorf | KUWEZU – Karosserie & Bremsen",
-  description: "Ihre Autowerkstatt in Warendorf: Karosserie, Bremsen, Ersatzwagen. Faire Preise, schnelle Termine. Jetzt Termin bei KUWEZU vereinbaren!",
+  title: "Autowerkstatt Warendorf | KUWEZU Werbeagentur GbR",
+  description: "Ihre Autowerkstatt in Warendorf: Karosserie, Bremsen & Ersatzwagen. Zuverlässig, fair und kompetent. Jetzt Termin vereinbaren!",
   openGraph: {
-    title: "Autowerkstatt Warendorf | KUWEZU – Karosserie & Bremsen",
-    description: "Ihre Autowerkstatt in Warendorf: Karosserie, Bremsen, Ersatzwagen. Faire Preise, schnelle Termine. Jetzt Termin bei KUWEZU vereinbaren!",
+    title: "Autowerkstatt Warendorf | KUWEZU Werbeagentur GbR",
+    description: "Ihre Autowerkstatt in Warendorf: Karosserie, Bremsen & Ersatzwagen. Zuverlässig, fair und kompetent. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },
