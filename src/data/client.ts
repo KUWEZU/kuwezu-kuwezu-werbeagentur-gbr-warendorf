@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-13T15:58:48.824Z
+ * Erstellt: 2026-05-14T09:46:45.265Z
  * Kundennummer: 67
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -11,7 +11,7 @@ export const client = {
   name: "KUWEZU Werbeagentur GbR",
   branche: "",
   ort: "Warendorf",
-  slogan: "Sicherheit",
+  slogan: "besten Händen",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
   telefon: "0176 21575303",
   email: "info@kuwezu.de",
@@ -29,9 +29,9 @@ export const client = {
   hero: {
     bild: "https://r2.kuwezu.de/kunden/67/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihr Kfz-Profi in Warendorf für Sicherheit",
-    ueberschriftHighlight: "Sicherheit",
-    untertext: "Autoglas, Bremsen und Achsvermessung – präzise Arbeit für Ihr Fahrzeug. Schnelle Termine und zuverlässiger Service direkt vor Ort.",
+    ueberschrift: "Ihr Fahrzeug in besten Händen",
+    ueberschriftHighlight: "besten Händen",
+    untertext: "Von Autoglas über Bremsen bis zur Achsvermessung – Ihr Kfz-Profi in Warendorf sorgt für Sicherheit und perfekte Fahrbarkeit.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://r2.kuwezu.de/kunden/67/ueber-uns.webp",
-    ueberschrift: "KUWEZU – Ihr Partner in Warendorf",
-    text1: "Als etablierte Kfz-Werkstatt in Warendorf kümmern wir uns um alle sicherheitsrelevanten Arbeiten an Ihrem Fahrzeug. Von der professionellen Autoglasreparatur über Bremsenwartung bis zur präzisen Achsvermessung – bei uns ist Ihr Auto in guten Händen. Unser erfahrenes Team arbeitet mit moderner Technik und kennt sich mit allen Fahrzeugmarken aus.",
-    text2: "Wir nehmen uns Zeit für eine ehrliche Beratung und transparente Kostenvoranschläge. Qualität, Zuverlässigkeit und faire Preise stehen bei uns an erster Stelle. Ihre Zufriedenheit und Ihre Sicherheit im Straßenverkehr sind unser Antrieb.",
-    tags: ["Faire Preise", "Schnelle Termine", "Erfahrenes Team", "Alle Marken"],
+    ueberschrift: "Ihre Kfz-Werkstatt mitten in Warendorf",
+    text1: "Bei KUWEZU in Warendorf dreht sich alles um die Sicherheit und Zuverlässigkeit Ihres Fahrzeugs. Wir sind spezialisiert auf Autoglasreparaturen, Bremsenwartung und präzise Achsvermessungen. Mit moderner Werkstattausstattung und fundiertem Fachwissen kümmern wir uns um Ihr Auto, damit Sie sicher unterwegs sind.",
+    text2: "Ehrliche Beratung und sorgfältige Arbeit sind für uns selbstverständlich. Wir nehmen uns Zeit für Sie und Ihr Fahrzeug – ohne unnötige Verkaufsgespräche, dafür mit transparenten Preisen und verlässlichen Terminen.",
+    tags: ["Fachwerkstatt", "Moderne Technik", "Faire Preise", "Schnelle Termine"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -57,22 +57,22 @@ export const client = {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Vom Steinschlag bis zum kompletten Scheibentausch – wir reparieren und erneuern Autoglas aller Art. Schnell, fachgerecht und mit Direktabrechnung über Ihre Versicherung.",
-      highlights: ["Steinschlag-Reparatur", "Scheibentausch alle Marken", "Versicherungsabwicklung"],
+      description: "Steinschlag oder Riss in der Scheibe? Wir reparieren und tauschen Autoglas fachgerecht aus – schnell, sauber und mit direkter Abwicklung über Ihre Versicherung.",
+      highlights: ["Steinschlagreparatur", "Scheibenaustausch", "Versicherungsabwicklung"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Sichere Bremsen retten Leben. Wir prüfen, warten und erneuern Bremsbeläge, Bremsscheiben und die komplette Bremsanlage nach Herstellervorgaben.",
-      highlights: ["Bremsbeläge & Scheiben", "Bremsleitungen", "Bremsflüssigkeitswechsel"],
+      description: "Sicherheit beginnt beim Bremsen. Wir prüfen, warten und erneuern Ihre Bremsanlage komplett – von Bremsbelägen über Scheiben bis zur Bremsflüssigkeit.",
+      highlights: ["Bremsbeläge erneuern", "Bremsscheiben wechseln", "Bremsflüssigkeit prüfen"],
     },
     {
       slug: "achsvermessung",
       title: "Achsvermessung",
       bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Präzise Achsvermessung für optimalen Fahrkomfort und gleichmäßigen Reifenverschleiß. Mit modernster Messtechnik stellen wir die Spur exakt ein.",
-      highlights: ["3D-Achsvermessung", "Spureinstellung", "Fahrwerkscheck"],
+      description: "Für optimalen Geradeauslauf und gleichmäßigen Reifenverschleiß führen wir computergestützte Achsvermessungen durch und stellen die Spur präzise ein.",
+      highlights: ["3D-Achsvermessung", "Spureinstellung", "Fahrwerksdiagnose"],
     }
   ],
 
