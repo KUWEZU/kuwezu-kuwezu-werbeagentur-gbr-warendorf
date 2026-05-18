@@ -18,20 +18,7 @@ function getNewsItems(): NewsItem[] {
   return fs
     .readdirSync(newsDir)
     .filter((f) => f.endsWith(".json"))
-    .flatMap((f) => {
-      try {
-        const raw = fs.readFileSync(path.join(newsDir, f), "utf-8");
-        const item = JSON.parse(raw) as Partial<NewsItem>;
-        if (!item.slug || !item.titel || !item.intro || !item.text || !item.datum) {
-          console.warn(`[news] Skipping ${f}: missing required fields (slug, titel, intro, text, datum)`);
-          return [];
-        }
-        return [item as NewsItem];
-      } catch (err) {
-        console.warn(`[news] Skipping ${f}: parse error —`, err);
-        return [];
-      }
-    })
+    .map((f) => JSON.parse(fs.readFileSync(path.join(newsDir, f), "utf-8")) as NewsItem)
     .sort((a, b) => b.datum.localeCompare(a.datum)); // newest first
 }
 

@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-18T09:17:13.918Z
+ * Erstellt: 2026-05-18T09:20:19.114Z
  * Kundennummer: 67
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -31,7 +31,7 @@ export const client = {
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
     ueberschrift: "Ihre Werkstatt für Autoglas und Fahrwerk",
     ueberschriftHighlight: "Autoglas und Fahrwerk",
-    untertext: "Professionelle Reparatur und Service in Warendorf. Von der Scheibenreparatur bis zur präzisen Achsvermessung – schnell, zuverlässig, fair.",
+    untertext: "Professionelle Reparaturen und Wartung in Warendorf. Vom Steinschlag bis zur perfekten Spur – wir kümmern uns um Ihr Fahrzeug.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://r2.kuwezu.de/kunden/67/ueber-uns.webp",
-    ueberschrift: "Ihre Fachwerkstatt in Warendorf",
-    text1: "Die KUWEZU Werbeagentur GbR steht in Warendorf für kompetenten Kfz-Service mit Schwerpunkt auf Autoglas, Bremsen und Fahrwerkstechnik. Mit moderner Ausstattung und fundiertem Fachwissen kümmern wir uns um Ihr Fahrzeug – von der kleinen Steinschlagreparatur bis zur komplexen Achsvermessung. Qualität und Kundenzufriedenheit stehen bei uns an erster Stelle.",
-    text2: "Wir arbeiten präzise, transparent und nehmen uns Zeit für persönliche Beratung. Faire Preise und verlässliche Termine sind für uns selbstverständlich. Ihr Auto ist bei uns in besten Händen.",
-    tags: ["Meisterbetrieb", "Moderne Technik", "Faire Preise", "Persönliche Beratung"],
+    ueberschrift: "Ihre Kfz-Profis aus Warendorf",
+    text1: "KUWEZU Werbeagentur GbR steht für zuverlässige Kfz-Dienstleistungen in Warendorf und Umgebung. Unser Team verfügt über langjährige Erfahrung in der Autoglas-Reparatur, Bremsenwartung und präzisen Achsvermessung. Wir arbeiten mit moderner Technik und setzen auf Qualität bei jedem Handgriff.",
+    text2: "Ehrliche Beratung und faire Preise sind für uns selbstverständlich. Wir nehmen uns Zeit für Ihre Anliegen und sorgen dafür, dass Sie sicher unterwegs sind. Vertrauen Sie auf unsere Kompetenz.",
+    tags: ["Meisterbetrieb", "Moderne Technik", "Faire Preise", "Schneller Service"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -57,22 +57,22 @@ export const client = {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Von der Steinschlagreparatur bis zum kompletten Scheibenwechsel – wir kümmern uns um alle Autoglas-Arbeiten. Mit Originalscheiben und professioneller Kalibrierung moderner Fahrassistenzsysteme.",
-      highlights: ["Steinschlagreparatur", "Scheibenwechsel alle Marken", "Kalibrierung Assistenzsysteme"],
+      description: "Von der Steinschlag-Reparatur bis zum kompletten Scheibenaustausch – wir kümmern uns um alle Autoglas-Schäden. Schnell, sauber und mit Garantie für Ihre Sicherheit.",
+      highlights: ["Steinschlag-Reparatur", "Scheibenaustausch", "Versicherungsabwicklung"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Sicherheit geht vor: Wir prüfen, warten und erneuern Ihre Bremsanlage nach Herstellervorgaben. Vom Bremsbelag über Bremsscheiben bis zur Bremsflüssigkeit – alles aus einer Hand.",
-      highlights: ["Bremsbeläge & Bremsscheiben", "Bremsflüssigkeitswechsel", "Komplette Bremsanlagen"],
+      description: "Funktionsfähige Bremsen sind lebenswichtig. Wir prüfen, warten und erneuern Ihre Bremsanlage nach Herstellervorgaben für optimale Sicherheit auf jeder Fahrt.",
+      highlights: ["Bremsbeläge wechseln", "Bremsflüssigkeit prüfen", "Bremscheiben erneuern"],
     },
     {
       slug: "achsvermessung",
       title: "Achsvermessung",
       bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Präzise 3D-Achsvermessung mit modernster Computertechnik für optimalen Geradeauslauf und gleichmäßigen Reifenverschleiß. Inklusive Einstellung und Dokumentation.",
-      highlights: ["3D-Achsvermessung", "Fahrwerkseinstellung", "Spureinstellung alle Achsen"],
+      description: "Mit modernster Messtechnik vermessen wir die Achsgeometrie Ihres Fahrzeugs präzise. Das spart Sprit, schont die Reifen und sorgt für sicheres Fahrverhalten.",
+      highlights: ["3D-Achsvermessung", "Spur einstellen", "Reifenverschleiß minimieren"],
     }
   ],
 
