@@ -11,11 +11,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Autoglas & Bremsen Service Warendorf | KUWEZU",
-  description: "Autoglas-Reparatur, Bremsenservice & Achsvermessung in Warendorf. Professionell, schnell & zuverlässig. Jetzt Termin vereinbaren bei KUWEZU!",
+  title: "Autowerkstatt Warendorf | Autoglas, Bremsen & mehr",
+  description: "Ihre Fachwerkstatt in Warendorf: Autoglas-Reparatur, Bremsenwartung & Achsvermessung. Schnell, zuverlässig, fair. Jetzt Termin vereinbaren!",
   openGraph: {
-    title: "Autoglas & Bremsen Service Warendorf | KUWEZU",
-    description: "Autoglas-Reparatur, Bremsenservice & Achsvermessung in Warendorf. Professionell, schnell & zuverlässig. Jetzt Termin vereinbaren bei KUWEZU!",
+    title: "Autowerkstatt Warendorf | Autoglas, Bremsen & mehr",
+    description: "Ihre Fachwerkstatt in Warendorf: Autoglas-Reparatur, Bremsenwartung & Achsvermessung. Schnell, zuverlässig, fair. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },
