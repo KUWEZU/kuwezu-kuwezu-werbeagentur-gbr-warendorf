@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-18T08:06:07.614Z
+ * Erstellt: 2026-05-18T08:23:47.567Z
  * Kundennummer: 67
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -11,7 +11,7 @@ export const client = {
   name: "KUWEZU Werbeagentur GbR",
   branche: "Werbeagentur",
   ort: "Warendorf",
-  slogan: "Autoglas und Fahrwerk",
+  slogan: "Ihre Kunden",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
   telefon: "0176 21575303",
   email: "info@kuwezu.de",
@@ -29,9 +29,9 @@ export const client = {
   hero: {
     bild: "https://r2.kuwezu.de/kunden/67/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihre Werkstatt für Autoglas und Fahrwerk",
-    ueberschriftHighlight: "Autoglas und Fahrwerk",
-    untertext: "Von Steinschlagreparatur bis zur präzisen Achsvermessung – Ihre Fachwerkstatt in Warendorf für Sicherheit und Fahrkomfort.",
+    ueberschrift: "Kreative Werbung die Ihre Kunden überzeugt",
+    ueberschriftHighlight: "Ihre Kunden",
+    untertext: "Von der ersten Idee bis zur fertigen Kampagne – KUWEZU Werbeagentur in Warendorf macht Ihre Marke sichtbar und erfolgreich.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://r2.kuwezu.de/kunden/67/ueber-uns.webp",
-    ueberschrift: "Ihre Fachwerkstatt in Warendorf",
-    text1: "KUWEZU ist Ihre zuverlässige Fachwerkstatt für Autoglas, Bremsen und Fahrwerk in Warendorf. Mit modernster Technik und langjähriger Erfahrung sorgen wir dafür, dass Ihr Fahrzeug sicher und zuverlässig unterwegs ist. Von der Steinschlagreparatur über den Bremsenwechsel bis zur computergestützten Achsvermessung bieten wir professionelle Lösungen.",
-    text2: "Wir nehmen uns Zeit für Ihr Anliegen und beraten Sie ehrlich. Qualität, Termintreue und faire Preise sind für uns selbstverständlich. Ihr Auto ist bei uns in guten Händen.",
-    tags: ["Meisterbetrieb", "Moderne Diagnosetechnik", "Faire Preise", "Schnelle Termine"],
+    ueberschrift: "Ihre Werbeagentur in Warendorf mit Leidenschaft für starke Marken",
+    text1: "KUWEZU Werbeagentur steht für kreative Werbelösungen aus Warendorf, die ankommen. Wir entwickeln individuelle Konzepte für Unternehmen jeder Größe – von der visuellen Gestaltung über Print bis hin zu digitalen Kampagnen. Mit Erfahrung, frischen Ideen und lokalem Know-how bringen wir Ihre Botschaft genau dorthin, wo sie wirkt.",
+    text2: "Wir arbeiten eng mit unseren Kunden zusammen und setzen auf ehrliche Beratung statt leerer Versprechen. Unser Anspruch: Werbung, die nicht nur gut aussieht, sondern echte Ergebnisse liefert. Persönlich, verlässlich und immer auf Augenhöhe.",
+    tags: ["Inhabergeführt", "Kreative Konzepte", "Persönliche Betreuung", "Regionale Expertise"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -57,22 +57,22 @@ export const client = {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Professionelle Autoglasreparatur und -austausch für alle Fahrzeugtypen. Wir kümmern uns um Steinschläge, Risse und komplette Scheibenwechsel – schnell und fachgerecht.",
-      highlights: ["Steinschlagreparatur", "Scheibenaustausch", "Versicherungsabwicklung"],
+      description: "Professionelle Autoglasbeschriftung und Fahrzeugwerbung für maximale Sichtbarkeit im Straßenverkehr. Wir gestalten und realisieren auffällige Designs, die Ihr Unternehmen mobil machen.",
+      highlights: ["Individuelle Fahrzeuggestaltung", "Hochwertige Folierung", "Langlebige Materialien"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Sicherheit beginnt beim Bremsen. Wir prüfen, warten und erneuern Bremsanlagen aller Art – von Bremsbelägen über Bremsscheiben bis zur kompletten Bremsanlage.",
-      highlights: ["Bremsbeläge & Scheiben", "Bremsflüssigkeitswechsel", "Bremsenprüfung"],
+      description: "Entwicklung durchschlagender Markenkommunikation, die im Gedächtnis bleibt. Von der Strategie bis zur Umsetzung sorgen wir dafür, dass Ihre Marke die richtigen Bremspunkte setzt.",
+      highlights: ["Strategische Markenführung", "Zielgruppengerechte Ansprache", "Messbare Kampagnenerfolge"],
     },
     {
       slug: "achsvermessung",
       title: "Achsvermessung",
       bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Präzise computergestützte Achsvermessung für optimalen Geradeauslauf und gleichmäßigen Reifenverschleiß. Für sicheres Fahrverhalten und längere Reifenlebensdauer.",
-      highlights: ["3D-Achsvermessung", "Spureinstellung", "Fahrwerksdiagnose"],
+      description: "Präzise Ausrichtung Ihrer Kommunikationsstrategie für optimale Marktpositionierung. Wir analysieren, justieren und bringen Ihre Werbemaßnahmen exakt auf Kurs.",
+      highlights: ["Strategische Positionierung", "Markt- und Zielgruppenanalyse", "Optimierte Kommunikationswege"],
     }
   ],
 
