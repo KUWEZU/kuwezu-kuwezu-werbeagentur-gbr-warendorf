@@ -11,11 +11,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Kfz-Werkstatt Warendorf | KUWEZU – Autoglas & Bremsen",
-  description: "Ihre Kfz-Werkstatt in Warendorf: Autoglas, Bremsen, Achsvermessung. Kompetent, zuverlässig, fair. Jetzt Termin vereinbaren bei KUWEZU!",
+  title: "KUWEZU Werbeagentur Warendorf – Kreative Werbung",
+  description: "Ihre Werbeagentur in Warendorf für kreative Konzepte und starke Marken. Persönlich, professionell, erfolgreich. Jetzt unverbindlich beraten lassen!",
   openGraph: {
-    title: "Kfz-Werkstatt Warendorf | KUWEZU – Autoglas & Bremsen",
-    description: "Ihre Kfz-Werkstatt in Warendorf: Autoglas, Bremsen, Achsvermessung. Kompetent, zuverlässig, fair. Jetzt Termin vereinbaren bei KUWEZU!",
+    title: "KUWEZU Werbeagentur Warendorf – Kreative Werbung",
+    description: "Ihre Werbeagentur in Warendorf für kreative Konzepte und starke Marken. Persönlich, professionell, erfolgreich. Jetzt unverbindlich beraten lassen!",
     type: "website",
     locale: "de_DE",
   },
