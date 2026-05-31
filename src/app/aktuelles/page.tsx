@@ -18,7 +18,15 @@ function getNewsItems(): NewsItem[] {
   return fs
     .readdirSync(newsDir)
     .filter((f) => f.endsWith(".json"))
-    .map((f) => JSON.parse(fs.readFileSync(path.join(newsDir, f), "utf-8")) as NewsItem)
+    .flatMap((f) => {
+      try {
+        const raw = fs.readFileSync(path.join(newsDir, f), "utf-8").trim();
+        if (!raw) return [];
+        return [JSON.parse(raw) as NewsItem];
+      } catch {
+        return []; // leere oder ungültige JSON-Datei überspringen
+      }
+    })
     .sort((a, b) => b.datum.localeCompare(a.datum)); // newest first
 }
 
@@ -40,8 +48,8 @@ export default function AktuellesPage() {
 
             {/* Section badge + heading */}
             <div className="mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-secondary/10 border border-brand-secondary/30 mb-6">
-                <span className="text-safe-secondary text-sm font-semibold uppercase tracking-wider">Aktuelles</span>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-primary/10 border border-brand-primary/25 mb-6">
+                <span className="text-safe-primary text-sm font-semibold uppercase tracking-wider">Aktuelles</span>
               </div>
               <h1
                 id="aktuelles-heading"
