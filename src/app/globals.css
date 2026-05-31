@@ -81,7 +81,7 @@
 
   /* Navbar non-scrolled */
   --nav-shadow:             0 1px 8px rgba(0,0,0,0.10), 0 1px 3px rgba(0,0,0,0.06);
-  --nav-hero-bg:            rgba(255,255,255,0.88);
+  --nav-hero-bg:            rgba(255,255,255,1.0);
   --nav-hero-text:          #1a1a1a;
   --nav-hero-text-muted:    #555555;
   --nav-hero-hover-bg:      rgba(0,0,0,0.06);
@@ -95,6 +95,15 @@
 
   /* Footer */
   --color-footer-bg:   #ffffff;
+}
+
+/* ── Navbar-Logo — kein weißer Hintergrund-Box ──────────────────────────────── */
+header img, nav img {
+  background: transparent;
+}
+/* Hell-Modus: mix-blend-mode:multiply blendet weiße Logo-Hintergründe auf weißer Navbar aus */
+header img[alt] {
+  mix-blend-mode: multiply;
 }
 
 /* ── Basis ───────────────────────────────────────────────────────────────────── */
