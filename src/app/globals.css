@@ -100,9 +100,9 @@
 /* ── Navbar-Logo — Größe + kein weißer Hintergrund-Box ─────────────────────── */
 header img, nav img {
   background: transparent;
-  height: 72px;
-  width: auto;
-  max-height: 72px;
+  height: 72px !important;
+  width: auto !important;
+  max-height: 72px !important;
   object-fit: contain;
 }
 /* Hell-Modus: mix-blend-mode:multiply blendet weiße Logo-Hintergründe auf weißer Navbar aus */
