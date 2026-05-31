@@ -11,11 +11,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Autowerkstatt Warendorf | KUWEZU Werbeagentur GbR",
-  description: "Ihre Autowerkstatt in Warendorf: Achsvermessung, Autoglas & Ersatzwagen. Kompetent, fair und zuverlässig. Jetzt Termin vereinbaren!",
+  title: "Autowerkstatt Warendorf – KUWEZU Werbeagentur GbR",
+  description: "Achsvermessung, Autoglas & Ersatzwagen in Warendorf. Professioneller Service für Ihr Fahrzeug. Jetzt Termin vereinbaren bei KUWEZU!",
   openGraph: {
-    title: "Autowerkstatt Warendorf | KUWEZU Werbeagentur GbR",
-    description: "Ihre Autowerkstatt in Warendorf: Achsvermessung, Autoglas & Ersatzwagen. Kompetent, fair und zuverlässig. Jetzt Termin vereinbaren!",
+    title: "Autowerkstatt Warendorf – KUWEZU Werbeagentur GbR",
+    description: "Achsvermessung, Autoglas & Ersatzwagen in Warendorf. Professioneller Service für Ihr Fahrzeug. Jetzt Termin vereinbaren bei KUWEZU!",
     type: "website",
     locale: "de_DE",
   },
