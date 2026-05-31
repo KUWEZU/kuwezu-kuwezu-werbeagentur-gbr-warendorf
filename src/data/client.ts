@@ -1,7 +1,7 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-31T19:53:48.124Z
- * Kundennummer: 141
+ * Erstellt: 2026-05-31T19:56:11.539Z
+ * Kundennummer: 142
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
  */
@@ -11,7 +11,7 @@ export const client = {
   name: "KUWEZU Werbeagentur GbR",
   branche: "",
   ort: "Warendorf",
-  slogan: "Kfz-Profi",
+  slogan: "Präzision",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
   telefon: "0176 21575303",
   email: "info@kuwezu.de",
@@ -27,22 +27,22 @@ export const client = {
   },
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
-    bild: "https://r2.kuwezu.de/kunden/141/hero.webp",
+    bild: "https://r2.kuwezu.de/kunden/142/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihr Kfz-Profi in Warendorf für Service",
-    ueberschriftHighlight: "Kfz-Profi",
-    untertext: "Von Autoglas über präzise Achsvermessung bis zum Ersatzwagen – bei uns sind Sie und Ihr Fahrzeug in besten Händen.",
+    ueberschrift: "Ihre Werkstatt für Präzision in Warendorf",
+    ueberschriftHighlight: "Präzision",
+    untertext: "Von exakter Achsvermessung über Autoglas-Service bis zum Ersatzwagen – wir halten Sie mobil und sicher unterwegs.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
 
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
-    bild: "https://r2.kuwezu.de/kunden/141/ueber-uns.webp",
+    bild: "https://r2.kuwezu.de/kunden/142/ueber-uns.webp",
     ueberschrift: "KUWEZU – Ihr verlässlicher Partner in Warendorf",
-    text1: "Die KUWEZU Werbeagentur GbR steht in Warendorf für professionellen Kfz-Service mit Weitblick. Ob Steinschlag im Autoglas, notwendige Achsvermessung oder ein Ersatzwagen für die Überbrückszeit – wir bieten Ihnen kompetente Lösungen aus einer Hand. Mit Fachwissen und modernem Equipment sorgen wir dafür, dass Sie schnell wieder mobil sind.",
-    text2: "Wir arbeiten präzise, transparent und kundennah. Ihr Vertrauen ist unsere Basis – deshalb setzen wir auf ehrliche Beratung, faire Preise und Termintreue. Bei uns zählt der Mensch, nicht nur das Fahrzeug.",
-    tags: ["Schneller Service", "Faire Preise", "Persönliche Beratung", "Mobilitätsgarantie"],
+    text1: "Als inhabergeführte Werkstatt in Warendorf stehen wir für präzise Arbeit und umfassenden Service rund um Ihr Fahrzeug. Unser Leistungsspektrum reicht von professioneller Achsvermessung über schnellen Autoglas-Service bis zur unkomplizierten Bereitstellung von Ersatzfahrzeugen. Seit Jahren vertrauen Autofahrer aus Warendorf und Umgebung auf unsere Kompetenz.",
+    text2: "Wir nehmen uns Zeit für Ihre Anliegen und arbeiten mit moderner Technik und geschultem Fachpersonal. Ehrliche Beratung, faire Preise und zuverlässiger Service – darauf können Sie sich bei uns verlassen.",
+    tags: ["Inhabergeführt", "Moderne Technik", "Faire Preise", "Schneller Service"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -54,25 +54,25 @@ export const client = {
   // ── Leistungen ─────────────────────────────────────────────────────────────
   leistungen: [
     {
-      slug: "autoglas",
-      title: "Autoglas",
-      bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Steinschlag oder Riss im Autoglas? Wir reparieren oder tauschen Windschutzscheiben und Seitenscheiben fachgerecht aus. Schnell, sauber und mit Garantie – oft übernimmt die Versicherung die Kosten komplett.",
-      highlights: ["Reparatur & Austausch", "Versicherungsabwicklung", "Schnelle Terminvergabe"],
-    },
-    {
       slug: "achsvermessung",
       title: "Achsvermessung",
       bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Mit modernster Messtechnik vermessen wir Ihre Achsen präzise und stellen die optimale Spur ein. Das spart Reifen, senkt den Verbrauch und erhöht Ihre Fahrsicherheit merklich.",
-      highlights: ["Computergestützte Vermessung", "Präzise Spureinstellung", "Mehr Fahrsicherheit"],
+      description: "Mit modernster Messtechnik vermessen wir Ihre Fahrzeugachsen präzise und korrigieren Abweichungen fachgerecht. So sorgen wir für optimales Fahrverhalten, gleichmäßigen Reifenverschleiß und maximale Sicherheit.",
+      highlights: ["3D-Achsvermessung", "Fahrwerkseinstellung", "Reifenschonung"],
+    },
+    {
+      slug: "autoglas",
+      title: "Autoglas",
+      bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
+      description: "Ob Steinschlag-Reparatur oder kompletter Scheibentausch – unser Autoglas-Service ist schnell, professionell und werkstattgerecht. Wir arbeiten mit Qualitätsglas und kümmern uns auf Wunsch um die Abwicklung mit Ihrer Versicherung.",
+      highlights: ["Steinschlag-Reparatur", "Scheibentausch", "Versicherungsabwicklung"],
     },
     {
       slug: "ersatzwagen",
       title: "Ersatzwagen",
       bild: "https://r2.kuwezu.de/bibliothek/Ersatzwagen/1777882571137-ersatzwagen_auto.webp",
-      description: "Wenn Ihr Fahrzeug in die Werkstatt muss, bleiben Sie mit unserem Ersatzwagen mobil. Unkompliziert, zuverlässig und zu fairen Konditionen – damit Sie Ihren Alltag ohne Einschränkungen meistern.",
-      highlights: ["Sofort verfügbar", "Faire Mietkonditionen", "Flexible Nutzungsdauer"],
+      description: "Damit Sie während Reparatur oder Wartung mobil bleiben, stellen wir Ihnen unkompliziert ein gepflegtes Ersatzfahrzeug zur Verfügung. Einfach reservieren und weiterfahren – so einfach geht das.",
+      highlights: ["Gepflegte Fahrzeuge", "Spontane Verfügbarkeit", "Unkomplizierte Abwicklung"],
     }
   ] as { slug: string; title: string; bild: string; description: string; highlights: string[] }[],
 
@@ -104,7 +104,7 @@ export const client = {
   },
 
   // ── WhatsApp ───────────────────────────────────────────────────────────────
-  whatsapp: "" as string,
+  whatsapp: "+4917621575303" as string,
 
   // ── Features ───────────────────────────────────────────────────────────────
   newsEnabled: false as boolean,
