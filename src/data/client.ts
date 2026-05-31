@@ -1,7 +1,7 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-31T18:27:48.740Z
- * Kundennummer: 135
+ * Erstellt: 2026-05-31T18:39:59.655Z
+ * Kundennummer: 137
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
  */
@@ -27,11 +27,11 @@ export const client = {
   },
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
-    bild: "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    bild: "https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1600",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
     ueberschrift: "Ihre Autowerkstatt in Warendorf mit Rundum-Service",
     ueberschriftHighlight: "Rundum-Service",
-    untertext: "Präzise Achsvermessung, schneller Ersatzwagen und professionelle Autoglas-Reparatur. Alles aus einer Hand für Ihr Fahrzeug.",
+    untertext: "Von der Achsvermessung bis zum Autoglas – wir kümmern uns um Ihr Fahrzeug. Mit Ersatzwagen bleiben Sie mobil.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://images.pexels.com/photos/4489794/pexels-photo-4489794.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    ueberschrift: "KUWEZU – Ihre Werkstatt in Warendorf",
-    text1: "Bei KUWEZU in Warendorf kümmern wir uns um alle Belange rund um Ihr Fahrzeug. Von der präzisen Achsvermessung über Autoglas-Reparaturen bis hin zur Bereitstellung von Ersatzwagen – wir bieten Ihnen umfassenden Service. Unser Team arbeitet mit moderner Technik und langjähriger Erfahrung für Ihre Mobilität.",
-    text2: "Wir legen Wert auf ehrliche Beratung, faire Preise und zuverlässige Arbeit. Ihr Auto ist bei uns in guten Händen – versprochen. Damit Sie schnell wieder sicher unterwegs sind.",
-    tags: ["Erfahrenes Team", "Moderne Technik", "Kundenorientiert", "Schneller Service"],
+    ueberschrift: "KUWEZU – Ihre Werkstatt-Partner in Warendorf",
+    text1: "Als etablierte Autowerkstatt in Warendorf bieten wir Ihnen umfassende Kfz-Dienstleistungen aus einer Hand. Unser Leistungsspektrum reicht von präziser Achsvermessung über professionelle Autoglas-Arbeiten bis hin zu allen gängigen Reparaturen. Damit Sie während der Werkstattzeit nicht auf Mobilität verzichten müssen, stellen wir Ihnen gerne einen Ersatzwagen zur Verfügung.",
+    text2: "Wir arbeiten gewissenhaft, transparent und mit modernster Werkstatttechnik. Ihr Vertrauen ist uns wichtig – deshalb nehmen wir uns Zeit für Beratung und erklären Ihnen jeden Arbeitsschritt nachvollziehbar.",
+    tags: ["Qualitätsarbeit", "Faire Preise", "Erfahrenes Team", "Moderne Ausstattung"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -54,25 +54,25 @@ export const client = {
   // ── Leistungen ─────────────────────────────────────────────────────────────
   leistungen: [
     {
-      slug: "achsvermessung",
-      title: "Achsvermessung",
-      bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Mit moderner Messtechnik bringen wir Ihre Achsen wieder in die perfekte Spur. Präzise Vermessung für optimale Fahreigenschaften und reduzierten Reifenverschleiß.",
-      highlights: ["Computergestützte Vermessung", "Optimaler Reifenschutz", "Verbessertes Fahrverhalten"],
-    },
-    {
       slug: "ersatzwagen",
       title: "Ersatzwagen",
       bild: "https://r2.kuwezu.de/bibliothek/Ersatzwagen/1777882571137-ersatzwagen_auto.webp",
-      description: "Damit Sie mobil bleiben, stellen wir Ihnen während der Reparatur einen Ersatzwagen zur Verfügung. Unkompliziert, zuverlässig und zu fairen Konditionen.",
-      highlights: ["Schnelle Verfügbarkeit", "Gepflegte Fahrzeuge", "Flexible Mietdauer"],
+      description: "Bleiben Sie mobil, während Ihr Fahrzeug bei uns in der Werkstatt ist. Wir stellen Ihnen unkompliziert einen gepflegten Ersatzwagen zur Verfügung.",
+      highlights: ["Schnelle Verfügbarkeit", "Gepflegte Fahrzeuge", "Faire Konditionen"],
+    },
+    {
+      slug: "achsvermessung",
+      title: "Achsvermessung",
+      bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
+      description: "Präzise Achsvermessung mit modernster Technik für optimalen Geradeauslauf und gleichmäßigen Reifenverschleiß. Wir justieren Ihr Fahrwerk exakt nach Herstellervorgaben.",
+      highlights: ["Computergestützte Messung", "Herstellervorgaben", "Längere Reifenlebensdauer"],
     },
     {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Steinschlag oder Riss in der Scheibe? Wir reparieren oder tauschen Ihr Autoglas fachgerecht aus. Schnelle Terminvergabe und direkte Abrechnung mit Ihrer Versicherung.",
-      highlights: ["Steinschlag-Reparatur", "Scheibentausch", "Versicherungsabwicklung"],
+      description: "Von kleinen Steinschlägen bis zum kompletten Scheibentausch – wir reparieren und erneuern Autoglas fachgerecht. Schnell, sauber und mit Qualitätsmaterialien.",
+      highlights: ["Steinschlagreparatur", "Scheibentausch", "Versicherungsabwicklung"],
     }
   ] as { slug: string; title: string; bild: string; description: string; highlights: string[] }[],
 
