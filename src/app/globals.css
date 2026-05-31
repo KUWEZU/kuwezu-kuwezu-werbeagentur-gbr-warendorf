@@ -97,9 +97,13 @@
   --color-footer-bg:   #ffffff;
 }
 
-/* ── Navbar-Logo — kein weißer Hintergrund-Box ──────────────────────────────── */
+/* ── Navbar-Logo — Größe + kein weißer Hintergrund-Box ─────────────────────── */
 header img, nav img {
   background: transparent;
+  height: 52px;
+  width: auto;
+  max-height: 52px;
+  object-fit: contain;
 }
 /* Hell-Modus: mix-blend-mode:multiply blendet weiße Logo-Hintergründe auf weißer Navbar aus */
 header img[alt] {

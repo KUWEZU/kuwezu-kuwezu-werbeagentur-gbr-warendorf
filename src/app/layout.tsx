@@ -12,10 +12,10 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Autoglas & Achsvermessung Warendorf | KUWEZU",
-  description: "Autoglas-Reparatur, Achsvermessung & Ersatzwagen in Warendorf. Schnell, professionell, zuverlässig. Jetzt Termin vereinbaren bei KUWEZU!",
+  description: "Autoglasreparatur, professionelle Achsvermessung und Ersatzwagen in Warendorf. Schnell, zuverlässig, fair. Jetzt Termin vereinbaren!",
   openGraph: {
     title: "Autoglas & Achsvermessung Warendorf | KUWEZU",
-    description: "Autoglas-Reparatur, Achsvermessung & Ersatzwagen in Warendorf. Schnell, professionell, zuverlässig. Jetzt Termin vereinbaren bei KUWEZU!",
+    description: "Autoglasreparatur, professionelle Achsvermessung und Ersatzwagen in Warendorf. Schnell, zuverlässig, fair. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },
