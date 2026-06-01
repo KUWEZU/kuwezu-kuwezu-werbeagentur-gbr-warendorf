@@ -1,7 +1,7 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-31T19:56:11.539Z
- * Kundennummer: 142
+ * Erstellt: 2026-06-01T04:17:05.808Z
+ * Kundennummer: 193
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
  */
@@ -9,9 +9,9 @@
 export const client = {
   // ── Allgemein ──────────────────────────────────────────────────────────────
   name: "KUWEZU Werbeagentur GbR",
-  branche: "",
+  branche: "Autowerkstatt",
   ort: "Warendorf",
-  slogan: "Präzision",
+  slogan: "zuverlässig",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
   telefon: "0176 21575303",
   email: "info@kuwezu.de",
@@ -27,22 +27,22 @@ export const client = {
   },
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
-    bild: "https://r2.kuwezu.de/kunden/142/hero.webp",
+    bild: "https://r2.kuwezu.de/kunden/193/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihre Werkstatt für Präzision in Warendorf",
-    ueberschriftHighlight: "Präzision",
-    untertext: "Von exakter Achsvermessung über Autoglas-Service bis zum Ersatzwagen – wir halten Sie mobil und sicher unterwegs.",
+    ueberschrift: "Ihre Autowerkstatt in Warendorf – zuverlässig",
+    ueberschriftHighlight: "zuverlässig",
+    untertext: "Von Autoglas über Achsvermessung bis Bremsen – professionelle Werkstattleistungen für Ihr Fahrzeug. Kompetent, fair und termingerecht.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
 
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
-    bild: "https://r2.kuwezu.de/kunden/142/ueber-uns.webp",
-    ueberschrift: "KUWEZU – Ihr verlässlicher Partner in Warendorf",
-    text1: "Als inhabergeführte Werkstatt in Warendorf stehen wir für präzise Arbeit und umfassenden Service rund um Ihr Fahrzeug. Unser Leistungsspektrum reicht von professioneller Achsvermessung über schnellen Autoglas-Service bis zur unkomplizierten Bereitstellung von Ersatzfahrzeugen. Seit Jahren vertrauen Autofahrer aus Warendorf und Umgebung auf unsere Kompetenz.",
-    text2: "Wir nehmen uns Zeit für Ihre Anliegen und arbeiten mit moderner Technik und geschultem Fachpersonal. Ehrliche Beratung, faire Preise und zuverlässiger Service – darauf können Sie sich bei uns verlassen.",
-    tags: ["Inhabergeführt", "Moderne Technik", "Faire Preise", "Schneller Service"],
+    bild: "https://r2.kuwezu.de/kunden/193/ueber-uns.webp",
+    ueberschrift: "Ihre Werkstatt-Profis aus Warendorf",
+    text1: "Als KUWEZU Werbeagentur GbR in Warendorf verbinden wir fachliche Kompetenz mit kundenorientiertem Service. Unsere Werkstatt ist Ihr Ansprechpartner für alle wichtigen Themen rund ums Fahrzeug – von der präzisen Achsvermessung über professionelle Bremsenwartung bis zum Autoglasservice.",
+    text2: "Wir arbeiten gewissenhaft, transparent und mit modernem Equipment. Bei uns steht Ihr Fahrzeug in guten Händen – versprochen. Faire Preise und ehrliche Beratung sind für uns selbstverständlich.",
+    tags: ["Meisterbetrieb", "Moderne Technik", "Faire Preise", "Schneller Service"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -54,25 +54,25 @@ export const client = {
   // ── Leistungen ─────────────────────────────────────────────────────────────
   leistungen: [
     {
-      slug: "achsvermessung",
-      title: "Achsvermessung",
-      bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Mit modernster Messtechnik vermessen wir Ihre Fahrzeugachsen präzise und korrigieren Abweichungen fachgerecht. So sorgen wir für optimales Fahrverhalten, gleichmäßigen Reifenverschleiß und maximale Sicherheit.",
-      highlights: ["3D-Achsvermessung", "Fahrwerkseinstellung", "Reifenschonung"],
-    },
-    {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Ob Steinschlag-Reparatur oder kompletter Scheibentausch – unser Autoglas-Service ist schnell, professionell und werkstattgerecht. Wir arbeiten mit Qualitätsglas und kümmern uns auf Wunsch um die Abwicklung mit Ihrer Versicherung.",
-      highlights: ["Steinschlag-Reparatur", "Scheibentausch", "Versicherungsabwicklung"],
+      description: "Professioneller Autoglasservice für alle Fahrzeugtypen. Ob Steinschlagreparatur oder kompletter Scheibentausch – wir sorgen für klare Sicht und Ihre Sicherheit.",
+      highlights: ["Steinschlagreparatur", "Scheibenwechsel", "Versicherungsabwicklung"],
     },
     {
-      slug: "ersatzwagen",
-      title: "Ersatzwagen",
-      bild: "https://r2.kuwezu.de/bibliothek/Ersatzwagen/1777882571137-ersatzwagen_auto.webp",
-      description: "Damit Sie während Reparatur oder Wartung mobil bleiben, stellen wir Ihnen unkompliziert ein gepflegtes Ersatzfahrzeug zur Verfügung. Einfach reservieren und weiterfahren – so einfach geht das.",
-      highlights: ["Gepflegte Fahrzeuge", "Spontane Verfügbarkeit", "Unkomplizierte Abwicklung"],
+      slug: "achsvermessung",
+      title: "Achsvermessung",
+      bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
+      description: "Präzise Achsvermessung mit modernster Technologie. Wir korrigieren Fahrwerkseinstellungen für optimalen Geradeauslauf, gleichmäßigen Reifenverschleiß und sicheres Fahrverhalten.",
+      highlights: ["Computergestützte Vermessung", "Fahrwerkseinstellung", "Reifenschonung"],
+    },
+    {
+      slug: "bremsen",
+      title: "Bremsen",
+      bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
+      description: "Kompletter Bremsservice für maximale Sicherheit. Von der Inspektion über Belagwechsel bis zur Erneuerung der Bremsscheiben – Ihre Bremsen in Bestform.",
+      highlights: ["Bremsbeläge wechseln", "Bremsscheiben erneuern", "Bremswartung"],
     }
   ] as { slug: string; title: string; bild: string; description: string; highlights: string[] }[],
 
@@ -104,7 +104,7 @@ export const client = {
   },
 
   // ── WhatsApp ───────────────────────────────────────────────────────────────
-  whatsapp: "+4917621575303" as string,
+  whatsapp: "+49 17621575303" as string,
 
   // ── Features ───────────────────────────────────────────────────────────────
   newsEnabled: false as boolean,
