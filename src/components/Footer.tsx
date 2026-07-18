@@ -84,7 +84,7 @@ export function Footer() {
               {[
                 { label: "Über uns",         href: "#ueber-uns"        },
                 ...(client.newsEnabled ? [{ label: "Aktuelles", href: "/aktuelles" }] : []),
-                { label: "Karriere",         href: "#karriere"         },
+                ...(client.karriere?.enabled === false ? [] : [{ label: "Karriere", href: "#karriere" }]),
                 { label: "Kontakt",          href: "#kontakt"          },
                 { label: "Impressum",        href: "/impressum"        },
                 { label: "Datenschutz",      href: "/datenschutz"      },
@@ -129,7 +129,18 @@ export function Footer() {
                     <div className="w-8 h-8 rounded-lg bg-safe-icon/10 flex items-center justify-center shrink-0 mt-0.5">
                       <MapPin className="w-4 h-4 text-safe-icon" aria-hidden="true" />
                     </div>
-                    <span className="leading-relaxed">{client.adresse}</span>
+                    {client.maps_url ? (
+                      <a
+                        href={client.maps_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="leading-relaxed hover:text-brand-text transition-colors"
+                      >
+                        {client.adresse}
+                      </a>
+                    ) : (
+                      <span className="leading-relaxed">{client.adresse}</span>
+                    )}
                   </address>
                 </li>
               )}
@@ -141,7 +152,7 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-brand-border">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-5 pb-24 sm:pb-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-brand-muted">© {year} {client.name}. Alle Rechte vorbehalten.</p>
           <div className="flex items-center gap-5">
             <a href="/impressum"        className="text-sm text-brand-muted hover:text-brand-text transition-colors">Impressum</a>

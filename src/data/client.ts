@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-07-18T12:00:46.097Z
+ * Erstellt: 2026-07-18T13:45:16.981Z
  * Kundennummer: 244
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
