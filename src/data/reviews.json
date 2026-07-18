@@ -2,13 +2,25 @@
   "averageRating": 5,
   "totalCount": 42,
   "source": "Google",
-  "fetchedAt": "2026-06-01T04:15:00.629Z",
+  "fetchedAt": "2026-07-18T11:53:54.308Z",
   "reviews": [
     {
-      "author": "Malte Ottmann",
+      "author": "Timo Traber",
       "rating": 5,
-      "text": "Bin top zufrieden hab nur gute Erfahrung machen können. Kann ich nur weiterempfehlen! Schnell, seriös und dazu kompetente Arbeit. Immer wieder gern.",
-      "date": "vor einem Jahr"
+      "text": "Hervorragende Werbeagentur mit einem tollen Gespür für modernes Design! Das Team von KUWEZU hat unsere Vision perfekt verstanden und grafisch auf ein neues Level gehoben. Die Kommunikation war von Anfang an professionell und unkompliziert. Wer Wert auf kreative Lösungen und eine saubere Umsetzung legt, ist hier genau richtig. Absolute Empfehlung!",
+      "date": "vor 2 Monaten"
+    },
+    {
+      "author": "Fatih",
+      "rating": 5,
+      "text": "Die Zusammenarbeit war unkompliziert, schnell und von der ersten Beratung bis zur finalen Umsetzung lief alles absolut professionell und transparent ab. Es wurde individuell auf meine Wünsche eingegangen und eine maßgeschneiderte Lösung bereitgestellt. Am Ende habe ich nicht nur eine moderne Website bekommen, sondern auch spürbar bessere Ergebnisse. Klare Empfehlung!",
+      "date": "vor 2 Monaten"
+    },
+    {
+      "author": "Susanne Siekmann",
+      "rating": 5,
+      "text": "Vielen Dank für die neue Webseite. Können wir sehr weiter empfehlen!",
+      "date": "vor 2 Monaten"
     },
     {
       "author": "Marc DoX",
@@ -17,22 +29,10 @@
       "date": "vor einem Jahr"
     },
     {
-      "author": "Simon",
+      "author": "Malte Ottmann",
       "rating": 5,
-      "text": "Bin mit dem Service und mit der Leistung sehr zufrieden und kann das Unternehmen auf jeden Fall weiterempfehlen! Vielen Dank ans Team!",
+      "text": "Bin top zufrieden hab nur gute Erfahrung machen können. Kann ich nur weiterempfehlen! Schnell, seriös und dazu kompetente Arbeit. Immer wieder gern.",
       "date": "vor einem Jahr"
-    },
-    {
-      "author": "Özgür Özer",
-      "rating": 5,
-      "text": "Sehr zufrieden sehr zu empfehlen weiter so 👍👍👍",
-      "date": "vor einem Jahr"
-    },
-    {
-      "author": "Tobias A.",
-      "rating": 5,
-      "text": "Besser kann es gar nicht laufen.\nSehr freundlich und familiär.\nWir werden uns auch in Zukunft immer an Sie wenden!",
-      "date": "vor 4 Jahren"
     }
   ],
   "_debug": "gmb-import"

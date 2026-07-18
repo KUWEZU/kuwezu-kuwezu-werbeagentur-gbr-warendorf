@@ -11,20 +11,22 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Autowerkstatt Warendorf – KUWEZU | Autoglas & Bremsen",
-  description: "Ihre Autowerkstatt in Warendorf: Autoglas, Achsvermessung & Bremsen. Professionell, fair & zuverlässig. Jetzt Termin vereinbaren bei KUWEZU!",
+  title: "KUWEZU Werbeagentur GbR | Autowerkstatt in Warendorf",
+  description: "KUWEZU Werbeagentur GbR in Warendorf — Ihr Experte für Autoglas, Bremsen, Elektroautos und mehr. Jetzt Termin vereinbaren!",
   openGraph: {
-    title: "Autowerkstatt Warendorf – KUWEZU | Autoglas & Bremsen",
-    description: "Ihre Autowerkstatt in Warendorf: Autoglas, Achsvermessung & Bremsen. Professionell, fair & zuverlässig. Jetzt Termin vereinbaren bei KUWEZU!",
+    title: "KUWEZU Werbeagentur GbR | Autowerkstatt in Warendorf",
+    description: "KUWEZU Werbeagentur GbR in Warendorf — Ihr Experte für Autoglas, Bremsen, Elektroautos und mehr. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "KUWEZU Werbeagentur GbR | Autowerkstatt in Warendorf",
+    description: "KUWEZU Werbeagentur GbR in Warendorf — Ihr Experte für Autoglas, Bremsen, Elektroautos und mehr. Jetzt Termin vereinbaren!",
+  },
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
-      { url: "/logo.png", type: "image/png" },
-    ],
-    apple: "/logo.png",
+    icon: [{ url: "https://r2.kuwezu.de/konzepte/autofit/autofit_logo.webp" }],
+    apple: [{ url: "https://r2.kuwezu.de/konzepte/autofit/autofit_logo.webp" }],
   },
 };
 

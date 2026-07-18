@@ -1,7 +1,7 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-06-01T04:17:05.808Z
- * Kundennummer: 193
+ * Erstellt: 2026-07-18T12:00:46.097Z
+ * Kundennummer: 244
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
  */
@@ -11,13 +11,14 @@ export const client = {
   name: "KUWEZU Werbeagentur GbR",
   branche: "Autowerkstatt",
   ort: "Warendorf",
-  slogan: "zuverlässig",
+  slogan: "professionell & zuverlässig",
   adresse: "Bernhardstraße 4c, 48231 Warendorf",
+  maps_url: "https://www.google.com/maps/place/?q=place_id:ChIJW5pWFuyRuUcRSwt6O05RmQQ",
   telefon: "0176 21575303",
   email: "info@kuwezu.de",
-  website: "",
+  website: "https://kuwezu.de",
   logo: "https://r2.kuwezu.de/konzepte/autofit/autofit_logo.webp",
-  standort_bild: null,
+  standort_bild: "https://r2.kuwezu.de/kunden/244/standort.webp",
 
   // ── Branding ───────────────────────────────────────────────────────────────
   farben: {
@@ -27,27 +28,26 @@ export const client = {
   },
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
-    bild: "https://r2.kuwezu.de/kunden/193/hero.webp",
+    bild: "https://r2.kuwezu.de/kunden/244/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihre Autowerkstatt in Warendorf – zuverlässig",
-    ueberschriftHighlight: "zuverlässig",
-    untertext: "Von Autoglas über Achsvermessung bis Bremsen – professionelle Werkstattleistungen für Ihr Fahrzeug. Kompetent, fair und termingerecht.",
+    ueberschrift: "Autowerkstatt — professionell & zuverlässig",
+    ueberschriftHighlight: "professionell & zuverlässig",
+    untertext: "Ihr Partner für alle Belange rund um Autowerkstatt in Warendorf und Umgebung.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
 
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
-    bild: "https://r2.kuwezu.de/kunden/193/ueber-uns.webp",
-    ueberschrift: "Ihre Werkstatt-Profis aus Warendorf",
-    text1: "Als KUWEZU Werbeagentur GbR in Warendorf verbinden wir fachliche Kompetenz mit kundenorientiertem Service. Unsere Werkstatt ist Ihr Ansprechpartner für alle wichtigen Themen rund ums Fahrzeug – von der präzisen Achsvermessung über professionelle Bremsenwartung bis zum Autoglasservice.",
-    text2: "Wir arbeiten gewissenhaft, transparent und mit modernem Equipment. Bei uns steht Ihr Fahrzeug in guten Händen – versprochen. Faire Preise und ehrliche Beratung sind für uns selbstverständlich.",
-    tags: ["Meisterbetrieb", "Moderne Technik", "Faire Preise", "Schneller Service"],
+    bild: "https://r2.kuwezu.de/kunden/244/ueber-uns.webp",
+    ueberschrift: "KUWEZU Werbeagentur GbR — Ihr Partner in Warendorf",
+    text1: "Als erfahrener Autowerkstatt-Betrieb in Warendorf bieten wir unseren Kunden seit Jahren zuverlässigen Service und kompetente Beratung. Mit Fachkompetenz und modernen Methoden lösen wir Ihre Anliegen effizient und zuverlässig.",
+    text2: "Wir setzen auf höchste Qualität, transparente Preise und persönlichen Service — damit Sie rundum zufrieden sind.",
+    tags: ["Qualität", "Zuverlässigkeit", "Faire Preise", "Erfahrung", "Top-Qualität"],
     stats: [
-      { value: "10+",    label: "Jahre Erfahrung"   },
-      { value: "1.000+", label: "Zufriedene Kunden" },
-      { value: "5",      label: "Fachkräfte"        },
-      { value: "5.000+", label: "Aufträge/Jahr"     },
+      { value: "250", label: "Zufriedene Kunden" },
+      { value: "6", label: "Fachkräfte" },
+      { value: "70", label: "Aufträge/Jahr" },
     ],
   },
 
@@ -57,35 +57,44 @@ export const client = {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Professioneller Autoglasservice für alle Fahrzeugtypen. Ob Steinschlagreparatur oder kompletter Scheibentausch – wir sorgen für klare Sicht und Ihre Sicherheit.",
-      highlights: ["Steinschlagreparatur", "Scheibenwechsel", "Versicherungsabwicklung"],
-    },
-    {
-      slug: "achsvermessung",
-      title: "Achsvermessung",
-      bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Präzise Achsvermessung mit modernster Technologie. Wir korrigieren Fahrwerkseinstellungen für optimalen Geradeauslauf, gleichmäßigen Reifenverschleiß und sicheres Fahrverhalten.",
-      highlights: ["Computergestützte Vermessung", "Fahrwerkseinstellung", "Reifenschonung"],
+      description: "Professionelle Autoglas — schnell, zuverlässig und zu fairen Preisen.",
+      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Kompletter Bremsservice für maximale Sicherheit. Von der Inspektion über Belagwechsel bis zur Erneuerung der Bremsscheiben – Ihre Bremsen in Bestform.",
-      highlights: ["Bremsbeläge wechseln", "Bremsscheiben erneuern", "Bremswartung"],
+      description: "Professionelle Bremsen — schnell, zuverlässig und zu fairen Preisen.",
+      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
+    },
+    {
+      slug: "elektroautos",
+      title: "Elektroautos",
+      bild: "https://r2.kuwezu.de/bibliothek/Elektroautos/1777878408924-leistung_elektroautos.webp",
+      description: "Professionelle Elektroautos — schnell, zuverlässig und zu fairen Preisen.",
+      highlights: ["Qualität", "Zuverlässigkeit", "Faire Preise"],
     }
   ] as { slug: string; title: string; bild: string; description: string; highlights: string[] }[],
 
   // ── Karriere ───────────────────────────────────────────────────────────────
+  // Kundenpflegbar (Stammdaten) bzw. künftig autoservice.jobs-Feed — keine
+  // erfundenen Platzhalter-Stellen mehr. jobs: [] → Template blendet
+  // "Offene Stellen" aus; enabled: false → ganze Section entfällt.
   karriere: {
+    enabled: true as boolean,
     jobs: [
-      { title: "Fachkraft (m/w/d)",       type: "Vollzeit",   experience: "Berufserfahrung erwünscht"  },
-      { title: "Auszubildende (m/w/d)",    type: "Ausbildung", experience: "Schulabschluss erforderlich" },
-    ],
+      { title: "Vertriebler", type: "Vollzeit", experience: "BWL Studium" },
+    ] as { title: string; type: string; experience: string }[],
+    benefits: null as { title: string; text: string }[] | null,
+    // null = In-Page-Anker #kontakt; http(s)-URL öffnet im neuen Tab
+    buttonUrl: null as string | null,
   },
 
   // ── Öffnungszeiten & Services ──────────────────────────────────────────────
-  tuev_termine: false as boolean,
+  tuev_termine: true as boolean,
+  // Wiederkehrende TÜV-/HU-Termine — leer/null: kein Infoblock auf der Seite
+  tuev_slots: [{ day: "mo", from: "08:00", to: "16:00" }] as { day: string; from: string; to: string }[] | null,
+  tuev_hinweis: "oder nach Vereinbarung" as string | null,
   oeffnungszeiten: {
     mo_fr: "09:00 – 18:00" as string,
     sa:    "" as string,
@@ -99,15 +108,21 @@ export const client = {
 
   // ── Social Media ───────────────────────────────────────────────────────────
   social: {
-    facebook:  null as string | null,
+    facebook:  "https://www.facebook.com/KUWEZU/" as string | null,
     instagram: null as string | null,
   },
 
   // ── WhatsApp ───────────────────────────────────────────────────────────────
-  whatsapp: "+49 17621575303" as string,
+  whatsapp: "+4917621575303" as string,
 
   // ── Features ───────────────────────────────────────────────────────────────
   newsEnabled: false as boolean,
+
+  // ── Impressum / Rechtsangaben (Migration 095) ───────────────────────────────
+  impressum: { inhaber: "Sven Sickmann", rechtsform: "GbR", ust_id: "DE12342e", verantwortlicher: "Sven Sickmann, KUWEZU GbR" } as {
+    inhaber?: string; rechtsform?: string; ust_id?: string; handelsregister?: string;
+    registergericht?: string; aufsichtsbehoerde?: string; verantwortlicher?: string;
+  },
 } as const;
 
 export type LeistungConfig = (typeof client.leistungen)[number];
