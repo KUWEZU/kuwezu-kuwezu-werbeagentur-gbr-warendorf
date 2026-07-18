@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-07-18T13:45:16.981Z
+ * Erstellt: 2026-07-18T13:47:10.831Z
  * Kundennummer: 244
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -84,6 +84,7 @@ export const client = {
     enabled: true as boolean,
     jobs: [
       { title: "Vertriebler", type: "Vollzeit", experience: "BWL Studium" },
+      { title: "Teststelle", type: "", experience: "" },
     ] as { title: string; type: string; experience: string }[],
     benefits: null as { title: string; text: string }[] | null,
     // null = In-Page-Anker #kontakt; http(s)-URL öffnet im neuen Tab
